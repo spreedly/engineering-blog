@@ -1,0 +1,69 @@
+worker_processes  4;
+daemon off;
+
+events {
+  worker_connections  1024;
+}
+
+http {
+
+  include            mime.types;
+  default_type       application/octet-stream;
+
+  sendfile           on;
+  keepalive_timeout  65;
+
+  port_in_redirect   off;
+
+  # These are piped to STDOUT by the start_nginx script (created by the buildpack)
+  error_log          logs/error.log;
+  access_log         logs/access.log;
+  log_format         ryandiggity 'url=$request_uri status=$status referrer=$http_referer';
+
+  # $request_path is not natively defined
+  map $request_uri $request_path {
+    ~*(?<captured_path>[^?]*) $captured_path;
+  }
+
+  server {
+
+    listen           <%= ENV['PORT'] %>;
+    server_name      <%= ENV['HOST'] || 'localhost' %>;
+
+    index            index.html;
+
+    gzip_static      on;
+    gzip_proxied     any;
+    gzip_disable     "msie6";
+
+    add_header       Vary Accept-Encoding;
+    add_header       Cache-Control public;
+
+    <% if ENV['ENV'] == "production" %>
+    # Make sure all requests are via https in production (accounting for the fact
+    # that we are behind a load balancer - Heroku routers - that handle SSL termination
+    # so we have to look for the forwarded protocol, not the actual protocol reaching
+    # nginx)
+
+    if ($http_x_forwarded_proto != "https") {
+      rewrite          ^   https://$server_name$request_uri? permanent;
+    }
+    <% end %>
+
+    # Generated site at "public" root dir
+    location / {
+
+      root           build;
+      autoindex      off;
+      expires        <%= ENV['DEFAULT_TTL'] || 3600 %>s;
+      try_files      $uri $uri/ $uri.html index.html
+
+      # Static assets
+      location ~* (-[A-Za-z0-9]+)\.(css|js|gif|jpe?g|png|woff) {
+        expires max;
+        break;
+      }
+
+    }
+  }
+}
