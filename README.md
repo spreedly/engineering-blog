@@ -2,7 +2,18 @@
 
 [Middleman](https://middlemanapp.com) app for the [Spreedly Engineering Blog](https://engineering.spreedly.com).
 
-## Deploying
+## Run
+
+To run the app locally:
+
+```bash
+$ bundle
+$ bundle exec middleman
+```
+
+Then open http://localhost:4567 in your browser to view the site or write/design for the site.
+
+## Deploy
 
 _Assumes the [Heroku Toolbelt](https://toolbelt.heroku.com) is installed and authenticated_
 
