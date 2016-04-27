@@ -5,5 +5,7 @@ ruby "2.2.3"
 gem 'middleman'
 gem 'middleman-syntax'
 gem 'middleman-livereload'
+gem 'middleman-blog'
 
-gem 'redcarpet', '~> 3.3.2'
+gem 'redcarpet'
+gem 'builder'
