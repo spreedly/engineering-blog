@@ -1,24 +1,38 @@
 ---
 pageable: true
-per_page: 10
+per_page: 7
 ---
-<% if paginate && num_pages > 1 %>
+<% if paginate && num_pages > 7 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
 <% end %>
 
 <% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
+  <div class="article-abstract">
+      <h1><%= link_to article.title, article %></h1>
+      <img class="byline-img" src="/images/gravatar.svg">
+      <p class="byline"><%= article.data.author %></p>
+      <br class="rwd-break">
+      <img class="byline-img" src="/images/calendar.svg">
+      <p class="byline"><%= article.date.strftime('%B %e, %Y') %></p>
+      <%= article.summary(200) %>
+      <%= link_to "Read More", article, class: 'button' %>
+  </div>
 <% end %>
 
 <% if paginate %>
   <% if next_page %>
     <p><%= link_to 'Next page', next_page %></p>
   <% end %>
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
 <% end %>
+
+<!-- <div class="pagination">
+    <div class="next">
+      <img src="/images/next.svg"><p><%= link_to 'Next page', next_page %></p>
+  </div>
+  <div class="prev">
+      <p><%= link_to 'Previous page', prev_page %></p><img src="/images/previous.svg">
+  </div>
+</div> -->

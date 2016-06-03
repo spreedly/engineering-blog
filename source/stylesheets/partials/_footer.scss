@@ -1,0 +1,51 @@
+.row-footer {
+  @include row();
+  background-color:
+  $dark-gray; margin-top:
+  70px;
+}
+.container-footer {
+  @include outer-container;
+  padding: 60px 40px;
+  color: $white;
+  font-size: $small-text
+}
+.col-footer, .col-footer-lg {
+  @include breakpoint($mobile) {
+    @include span-columns (12 of 12);
+    @include shift(0);
+  }
+}
+.col-footer {
+  @include breakpoint($tablet) {
+    @include span-columns (2 of 12);
+  }
+}
+.col-footer-lg {
+  @include breakpoint($tablet) {
+    @include span-columns (4 of 12); @include shift(0);
+  }
+}
+.col-footer {
+  @include breakpoint($desktop) {
+    @include span-columns (2 of 12);
+  }
+}
+.col-footer-lg {
+  @include breakpoint($desktop) {
+    @include span-columns (3 of 12); @include shift(1);
+  }
+}
+.col-footer ul > li > a, .col-footer-lg a, .col-footer-lg p {
+  color: $med-gray;
+}
+.col-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.col-footer-lg p {
+  margin-top: 1.2em;
+}
+.col-footer ul > li > a:hover, .col-footer-lg a:hover {
+  color: $blue;
+}

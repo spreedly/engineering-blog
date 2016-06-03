@@ -1,0 +1,25 @@
+ul,
+ol {
+  // list-style-type: none;
+  margin: $mar-bot-32;
+  padding-left: 30px;
+  list-style-position: inside;
+}
+
+ul li ul, ul li ul li ul, ol li ol, ol li ol li ol {
+  margin: 0;
+  padding-left: 30px;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: 600;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

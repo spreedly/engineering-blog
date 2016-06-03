@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+  margin: $mar-bot-32;
+  table-layout: fixed;
+  width: 100%;
+  border: $base-border;
+}
+
+th {
+  background-color: $dark-gray; color: $white;
+  padding: 2em 0;
+  text-align: left;
+}
+
+th, td { padding: 10px;}
+tr:nth-child(even) {background: $white;}
+tr:nth-child(odd) {background: $light-gray}
+
+tr, td, th { vertical-align: middle;}

@@ -22,7 +22,7 @@ page '/*.txt', layout: false
 
 activate :syntax
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -32,7 +32,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "article_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -44,9 +44,9 @@ activate :blog do |blog|
   # blog.calendar_template = "calendar.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 7
+  blog.page_link = "page/{num}"
 end
 
 page "/feed.xml", layout: false

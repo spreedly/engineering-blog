@@ -4,18 +4,24 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/syntax-mani.css' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+    <title><%= current_page.data.title || "Spreedly | Engineering" %></title>
+    <%= stylesheet_link_tag "highlighting" %>
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag "all" %>
+    <script src="dist/clipboard.min.js"></script>
   </head>
-
   <body class="<%= page_classes %>">
-    <%= yield %>
+
+    <%= partial "partials/header" %>
+    <div class="row-body">
+      <div class="container-body">
+          <div class="articles">
+            <%= yield %>
+        </div>
+      </div>
+    </div>
+    <%= partial "partials/footer" %>
+
   </body>
 </html>

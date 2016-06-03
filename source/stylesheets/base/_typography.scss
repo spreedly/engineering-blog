@@ -1,0 +1,38 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+}
+
+h1 { margin: $mar-bot-16; color: $blue;}
+p, p.abstract, p.byline { margin: $mar-bot-32;}
+p.byline {font-size: $small-text; display: inline-block; padding-right: 30px;}
+blockquote {border-left: 10px solid $blue; font-style: italic; margin-left: 0px;}
+blockquote p {padding-left: 2em;}
+cite {font-size: $small-text; font-style: normal;}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active, &:focus, &:hover { color: shade($action-color, 25%); }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img, picture { margin: 0; max-width: 100%; }
+article img {width: 90%; display: block; margin-left: auto; margin-right: auto}
+.byline-img {padding-right: 7px; vertical-align: middle;}

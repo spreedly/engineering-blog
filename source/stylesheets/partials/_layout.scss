@@ -1,0 +1,20 @@
+.row-body {@include row();}
+.container-body {@include outer-container;}
+
+@include breakpoint($mobile) {
+  .articles {@include span-columns (4 of 6); @include shift(1 of 6);}
+  .article-abstract {margin-bottom: 70px;}
+}
+
+@include breakpoint($tablet) {
+  .articles {@include span-columns (6 of 8); @include shift(1 of 8);}
+  .article-abstract {margin-bottom: 70px;}
+}
+
+@include breakpoint($desktop) {
+  .articles {@include span-columns (8 of 12); @include shift(2 of 12);}
+  .article-abstract {margin-bottom: 70px;}
+}
+
+/* trick to get article date on second line when viewed mobile */
+@media screen and (min-width: 768px) { .rwd-break { display: none; } }

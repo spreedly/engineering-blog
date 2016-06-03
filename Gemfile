@@ -9,3 +9,7 @@ gem 'middleman-blog'
 
 gem 'redcarpet'
 gem 'builder'
+
+gem 'bourbon'
+gem 'bitters'
+gem 'neat'
