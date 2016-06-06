@@ -56,7 +56,7 @@ http {
       root           build;
       autoindex      off;
       expires        <%= ENV['DEFAULT_TTL'] || 3600 %>s;
-      try_files      $uri $uri/ $uri.html index.html
+      try_files      $uri $uri/ $uri.html index.html;
 
       # Static assets
       location ~* (-[A-Za-z0-9]+)\.(css|js|gif|jpe?g|png|woff) {
