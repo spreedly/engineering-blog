@@ -40,8 +40,8 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  # blog.tag_template = "tag.html"
-  # blog.calendar_template = "calendar.html"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 
   # Enable pagination
   blog.paginate = true
@@ -65,8 +65,12 @@ page "/feed.xml", layout: false
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # Use relative URLs
+    activate :relative_assets
+
 end
