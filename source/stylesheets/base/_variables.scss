@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -12,6 +12,7 @@ $base-line-height: 2;
 $heading-line-height: 1.2;
 
 // Margins
+$mar-bot-8: 0 0 .5em 0;
 $mar-bot-16: 0 0 1em 0;
 $mar-bot-32: 0 0 2em 0;
 
