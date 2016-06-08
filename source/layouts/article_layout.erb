@@ -1,7 +1,7 @@
 <% wrap_layout :layout do %>
       <h1><%= current_article.title %></h1>
       <img class="byline-img" src="/images/gravatar.svg">
-      <p class="byline"><%= current_article.data.author %></p>
+      <p class="byline"><%= link_to "#{current_article.data.author}", "#{current_article.data.author_url}" %></p>
       <br class="rwd-break">
       <img class="byline-img" src="/images/calendar.svg">
       <p class="byline"><%= current_article.date.strftime('%B %e, %Y') %></p>
