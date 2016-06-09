@@ -9,7 +9,7 @@ per_page: 7
 <% page_articles.each_with_index do |article, i| %>
   <div class="article-abstract">
       <h1><%= link_to article.title, article %></h1>
-      <img class="byline-img" src="/images/gravatar.svg">
+      <img class="byline-img" src="https://www.gravatar.com/avatar/<%= Digest::MD5.hexdigest("#{article.data.author_email}") %>?s=18&d=mm" />
       <p class="byline"><%= link_to "#{article.data.author}", "#{article.data.author_url}" %></p>
       <br class="rwd-break">
       <img class="byline-img" src="/images/calendar.svg">

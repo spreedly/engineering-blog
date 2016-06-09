@@ -1,6 +1,7 @@
 ---
 title: And Yet Another Title of an Article
-author: Sara McNara
+author: David Santoso
+author_email: david.e.santoso@gmail.com
 author_url: http://www.twitter.com
 date: 2016-01-01
 tags: example
