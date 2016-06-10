@@ -1,5 +1,5 @@
 ---
-title: Programming Puzzles Are Not the Answer - How Spreedly Does Work Samples
+title: Programming Puzzles Are Not the Answer
 author: Ryan Daigle
 author_email: ryan@spreedly.com
 author_url: https://twitter.com/rwdaigle
