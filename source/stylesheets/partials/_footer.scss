@@ -11,28 +11,28 @@
   font-size: $small-text
 }
 .col-footer, .col-footer-lg {
-  @include breakpoint($mobile) {
+  @include media($mobile) {
     @include span-columns (12 of 12);
     @include shift(0);
   }
 }
 .col-footer {
-  @include breakpoint($tablet) {
+  @include media($tablet) {
     @include span-columns (2 of 12);
   }
 }
 .col-footer-lg {
-  @include breakpoint($tablet) {
+  @include media($tablet) {
     @include span-columns (4 of 12); @include shift(0);
   }
 }
 .col-footer {
-  @include breakpoint($desktop) {
+  @include media($desktop) {
     @include span-columns (2 of 12);
   }
 }
 .col-footer-lg {
-  @include breakpoint($desktop) {
+  @include media($desktop) {
     @include span-columns (3 of 12); @include shift(1);
   }
 }

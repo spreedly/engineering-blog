@@ -1,17 +1,17 @@
 .row-body {@include row();}
 .container-body {@include outer-container;}
 
-@include breakpoint($mobile) {
+@include media($mobile) {
   .articles {@include span-columns (4 of 6); @include shift(1 of 6);}
   .article-abstract {margin-bottom: 70px;}
 }
 
-@include breakpoint($tablet) {
+@include media($tablet) {
   .articles {@include span-columns (6 of 8); @include shift(1 of 8);}
   .article-abstract {margin-bottom: 70px;}
 }
 
-@include breakpoint($desktop) {
+@include media($desktop) {
   .articles {@include span-columns (8 of 12); @include shift(2 of 12);}
   .article-abstract {margin-bottom: 70px;}
 }

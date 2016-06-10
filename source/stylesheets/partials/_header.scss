@@ -3,14 +3,14 @@
 header img, .blog-title-name {vertical-align: middle;}
 .blog-title-name {margin: 0 0 0 10px; padding-left:15px; font-size: 1.2em; color: $white; border-left: 2px solid $white; display: inline-block;}
 
-@include breakpoint($mobile) {
+@include media($mobile) {
   header { @include span-columns (6 of 6); }
 }
 
-@include breakpoint($tablet) {
+@include media($tablet) {
   header { @include span-columns (8 of 8); }
 }
 
-@include breakpoint($desktop) {
+@include media($desktop) {
   header { @include span-columns (12 of 12); }
 }
