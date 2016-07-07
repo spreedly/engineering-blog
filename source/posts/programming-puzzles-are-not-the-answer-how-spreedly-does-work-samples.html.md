@@ -8,31 +8,31 @@ date: 2016-06-10
 
 *A guide to creating fair and effective hiring work samples.*
 
-It’s a common topic of discussion amongst technical organizations that the traditional, in-person, conversation-based, interview process for developers is [flawed](http://www.wired.com/2015/04/hire-like-google/). The conventional process does not measure a candidate’s ability to perform the job in question, does not result in more successful hires, and is allows implicit bias to sneak in. As a result, many companies use an interview process based on programming puzzles: one-time exercises that test a candidate’s ability to solve a specific, well-known problem.
+It’s a common topic of discussion amongst technical organizations that the traditional, in-person, conversation-based, interview process for developers is [flawed](http://www.wired.com/2015/04/hire-like-google/). The conventional process does not measure a candidate’s ability to perform the job in question, does not result in more successful hires, and allows for implicit bias. As a result, many companies use an interview process based on programming puzzles: one-time exercises that test a candidate’s ability to solve a specific, well-known problem.
 
 While this may be a step in the right direction, it’s still a hugely biased and ineffective approach to hiring. In this post I explain how we do hiring at Spreedly and, specifically, how we measure a candidate’s competence using job and company specific work samples.
 
 
 ## What’s wrong with programming puzzles?
 
-If you’ve ever been asked as part of the interview process to code a B-Tree data structure, or to binary sort an array, or develop a game of tic-tac-toe, then you’ve been given a programming puzzle. Programming puzzles are often timed, or even worse, administered on-site during the interview process. There are several flaws with this approach, including:
+If you’ve ever been asked as part of the interview process to code a B-Tree data structure, or to binary sort an array, or develop a game of tic-tac-toe, then you’ve been given a programming puzzle. Programming puzzles are generic development tests that are often timed, or even worse, administered on-site during the interview process. There are several flaws with this approach, including:
 
 - The puzzles themselves are heavily biased towards people with formal computer science education. Right away this cuts out many talented individuals coming from non-traditional backgrounds and kills any semblance of inclusiveness.
 - Being timed or tested applies a certain amount of pressure to the candidate, which can drastically reduce their ability to think and put their best foot forward.
-- The puzzles are not a reflection of the work the company actually does, making their results un-indicative of a person’s ability to contribute to the team.
+- The puzzles are not a reflection of the work the company actually does, and do not indicate a person's ability to contribute to the team.
 
 The coding part of an interview process should be indicative of the candidate’s potential role and should be conducted in a working environment that most closely resembles the company’s environment. Timed programming puzzles miss on both counts.
 
 
 ## An alternative: Work samples
 
-At Spreedly, work samples are our preferred method of measuring a candidate’s technical abilities. We think they address many of the shortcomings of generic programming puzzles, with relatively few drawbacks.
+At Spreedly, work samples are our preferred method of measuring a candidate’s technical abilities. We think they address many of the shortcomings of generic programming puzzles, with minimal trade-offs.
 
-What is a work sample? Simply put, a work sample is an objectively and blindly graded domain-specific development task that the candidate completes on their own time. If you’re applying to a payment service company like Spreedly, you might expect to have a work sample dealing with some part of the payment processing flow. If you were applying to a platform provider, you might be asked to design a prototype version of a request router within well defined constraints.
+What does a work sample at Spreedly even mean? Simply put, a work sample is an objectively and blindly graded domain-specific development task that the candidate completes on their own time. If you’re applying to a payment service company like Spreedly, you might expect to have a work sample dealing with some part of the payment processing flow. If you were applying to a platform provider, you might be asked to design a prototype version of a request router within well defined constraints.
 
-> Work samples should be a reflection of what the company does and how they do it. They are as much about the company measuring the candidate as the candidate measuring the company.
+> Work samples should be a reflection of what the company does and how they do it. They are as much about the candidate measuring the company as the company measuring the candidate.
 
-Work samples will, necessarily, vary greatly between companies - and that’s the point! They should be a reflection of what the company does and how they do it. They are as much about the company measuring the candidate as the candidate measuring the company. We’ve spent a lot of time at Spreedly both identifying and refining work samples for all levels of our engineering positions (and even across the org!) and think we’ve identified the key characteristics of a good work sample.
+Work samples will, necessarily, vary greatly between companies - and that’s the point! They should be a reflection of what the company does and how they do it. They are as much about the company measuring the candidate as the candidate measuring the company. We’ve spent a lot of time at Spreedly both identifying and refining work samples for all levels of our engineering positions (and even across the org) and think we’ve identified the key characteristics of a good work sample.
 
 
 ## Choose a relevant exercise
@@ -41,7 +41,9 @@ One of the most important qualities of a work sample is that the task the candid
 
 For instance, Spreedly provides API integrations to over a hundred payment gateways, contributing to and maintaining the ActiveMerchant library in the process. Our [main work sample](https://gist.github.com/rwdaigle/e680696cf8078cbde5cc) is to actually create an ActiveMerchant adapter to a mock payment gateway. This is a real thing our development group does on a regular basis, and not only does it let us evaluate a candidate against a very well known deliverable, it also gives the candidate a sense of what happens inside the company.
 
-Some companies have work samples that are prototypes of a project that might actually ship someday. While this certainly satisfies the relevance criteria, we think it sends the wrong signal of asking a candidate to work for free. Our work sample is clearly not something that will ever make it to production (it’s a fake gateway, after all) and it shows that we’ve invested quite a bit of effort ourselves setting up this hypothetical integration.
+[![](http://share.ryandaigle.com/tperf-20160707152827.png)](https://gist.github.com/rwdaigle/e680696cf8078cbde5cc)
+
+Some companies have work samples that are prototypes of a project that might actually ship someday. While this certainly satisfies the relevance criteria, we think it sends the wrong signal of asking a candidate to work for free. Our work sample is clearly something that will never make it to production (it’s a fake gateway, after all) and it shows that we’ve invested quite a bit of effort ourselves setting up this hypothetical integration.
 
 A relevant but hypothetical work sample, not programming puzzles, ensures a real test of the candidate's ability to do the job and keeps a shared, symmetrical, sense of investment between the company and the candidate.
 
@@ -70,8 +72,9 @@ Whether acknowledged or not, we all bring our own biases to the interview proces
 
 At Spreedly, the person that is managing the hiring process (and is communicating directly with the candidate) adds the anonymized work sample to a hiring GitHub repo and creates an issue with the grading criteria checklist. Only once the grading has been completed, and its results confirmed from other team members, is the candidate’s application evaluated.
 
-![](http://share.ryandaigle.com/zkbb3-20160610105030.png)
+![](http://share.ryandaigle.com/4yug9-20160707153215.png)
 
+We recently had a hiccup where I incorrectly created grading issues for three different candidates *using the same work sample*. After realizing the mistake I looked to see how the three graders processed their work samples and they had all come to the same numerical grade (out of 33 criteria)! This was great validation that blind grading with well defined criteria can result in unbiased and consistent evaluations.
 
 ## Ensure candidate-friendly environment & expectations
 
