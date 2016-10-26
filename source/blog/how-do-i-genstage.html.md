@@ -262,18 +262,11 @@ Fine! Let’s go back to our earlier example. I want to pull tweets from some fe
       end
     
       def handle_demand(demand, state) do
-        {pulled, remaining} = pull_from_list(demand, state)
-        # We've pulled some tweets out of state. We send those as the 
-        # events or "things", and we reset state to the remaining tweets.
+        # Pull some tweets out of state. We send those as the events
+        # or "things", and we reset state to the remaining tweets.
+        # @jacobterpri pointed out the existence of Enum.split/2. Thanks!
+        {pulled, remaining} = Enum.split(state, demand) 
         {:noreply, pulled, remaining}
-      end
-    
-      # I haven't found an Erlang or Elixir function that does this.
-      # It would be more Elixir-y to do a recursive [this|that] = list thing.
-      defp pull_from_list(demand, list) do
-        pulled = Enum.slice(list, 0, demand)
-        remaining = list -- pulled
-        {pulled, remaining}
       end
     end
     
