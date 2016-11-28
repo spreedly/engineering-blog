@@ -7,11 +7,11 @@
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: .9em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: 10px;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
@@ -20,8 +20,10 @@
 
   &:hover,
   &:focus {
-    background-color: $blue;
+    background-color: $dark-blue;
+    border: 2px solid $dark-blue;
     color: $white;
+    box-shadow: #B7BABD 0 1px 5px 3px;
   }
 
   &:disabled {
