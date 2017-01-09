@@ -14,8 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin: $mar-bot-8; color: $blue; }
 p, p.abstract, p.byline { margin: $mar-bot-32;}
 p.byline {font-size: $small-text; display: inline-block; padding-right: 30px;}
-blockquote {border-left: 5px solid $blue; font-style: italic; margin-left: 0px;}
-blockquote p {padding-left: 2em;}
+blockquote {border-left: 3px solid $blue; background-color: #F8F8F8; font-style: italic; margin: 20px 0; padding: 5px 0 5px 20px;}
+blockquote p {margin: 1.3em;}
 cite {font-size: $small-text; font-style: normal;}
 
 a {
@@ -23,7 +23,7 @@ a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
-  &:active, &:focus, &:hover { color: shade($action-color, 25%); }
+  &:active, &:focus, &:hover { color: $dark-blue; }
 }
 
 hr {

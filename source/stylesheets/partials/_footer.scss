@@ -1,14 +1,16 @@
 .row-footer {
   @include row();
   background-color:
-  $dark-gray; margin-top:
-  70px;
+  $dark-blue;
 }
 .container-footer {
   @include outer-container;
-  padding: 60px 40px;
+  padding: 40px;
   color: $white;
-  font-size: $small-text
+  font-size: $small-text;
+  p {
+    margin-bottom: 0 !important;
+  }
 }
 .col-footer, .col-footer-lg {
   @include media($mobile) {
@@ -35,17 +37,4 @@
   @include media($desktop) {
     @include span-columns (3 of 12); @include shift(1);
   }
-}
-.col-footer ul > li > a, .col-footer-lg a, .col-footer-lg p {
-  color: $med-gray;
-}
-.col-footer ul {
-  list-style: none;
-  padding-left: 0px;
-}
-.col-footer-lg p {
-  margin-top: 1.2em;
-}
-.col-footer ul > li > a:hover, .col-footer-lg a:hover {
-  color: $blue;
 }

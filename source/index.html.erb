@@ -14,7 +14,7 @@ per_page: 7
       <br class="rwd-break">
       <img class="byline-img" src="/images/calendar.svg">
       <p class="byline"><%= article.date.strftime('%B %e, %Y') %></p>
-      <%= article.summary(750) %>
+      <%= article.summary(700) %>
       <%= link_to "Read More", article, class: 'button' %>
   </div>
 <% end %>
