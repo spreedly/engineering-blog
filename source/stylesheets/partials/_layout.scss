@@ -1,5 +1,6 @@
 .row-body {@include row();}
 .container-body {@include outer-container;}
+.rss-icon {margin-bottom: 40px; a {float: right;} img {vertical-align: baseline;}}
 
 @include media($mobile) {
   .articles {@include span-columns (4 of 6); @include shift(1 of 6);}
