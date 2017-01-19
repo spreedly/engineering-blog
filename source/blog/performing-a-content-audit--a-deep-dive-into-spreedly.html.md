@@ -4,9 +4,11 @@ author: Dane Wesolko
 author_email: dane@spreedly.com
 author_url: https://twitter.com/DanesBrains
 date: 2017-01-09
+tags: design
+image_src: /images/content-audit/leader.jpg
 ---
 
-![Getting prepped for a content audit of Spreedly's marketing website.](images/content-audit/spreedly_content_audit.jpg)
+![Getting prepped for a content audit of Spreedly's marketing website.](/images/content-audit/spreedly_content_audit.jpg)
 
 I came on-board in April of 2016. Post on-boarding process and adjustment to the new role, preliminary design research began. Payments was a new industry and so was Spreedly. Managing the marketing website became a responsibility. It was time to learn a few things. After speaking with colleagues the path was clear: perform a content audit . And so I did.
 
@@ -14,11 +16,13 @@ If you’ve never heard of a content audit before, or have but don’t know what
 
 Being as a content audit can be performed by different people for a variety of reasons, I decided I would look at things deemed beneficial to the role of designer at Spreedly. I needed to learn the nuts and bolts of the system I was working with and get an understanding of what I would/could do moving forward. Up-front there weren’t any initial assumptions of what I would find; I kept that open since this was to be an exploratory process.
 
+READMORE
+
 ##Diving Into The Work
 
 Here we go! The fun is ahead of us. I say that with sarcasm only because a content audit is like walking through a jungle without a path or a map. Thankfully in this instance that was not the case. Spreedly’s marketing website content audit went smoothly. But, be forewarned. Establish clear goals to know what you want to find and stay on track. It’s very easy to stray off course and start focusing on items you initially were not interested in.
 
-![Getting prepped for a content audit of Spreedly's marketing website.](images/content-audit/prepping_spreedly_content_audit_spreedsheet.jpg)
+![Getting prepped for a content audit of Spreedly's marketing website.](/images/content-audit/prepping_spreedly_content_audit_spreedsheet.jpg)
 
 Since this isn’t a task that requires fancy layouts or complex recordings of information it was easiest to use Google Docs. I created a spreadsheet where I captured all the relevant info and organized my findings. There were a variety of things I considered when I set forth on this adventure: the relationships of pages and content, groupings and informational hierarchy, on-page SEO, site structure, and an overall assessment of the site.
 
@@ -28,7 +32,7 @@ So what happens now? I go through each page of the site one by one, as well as t
 
 To give you a better understanding of what I tried to uncover and what kind of information I gathered, here is a more in-depth look at what was recorded.
 
-![A closer look at Spreedly's navigation.](images/content-audit/investigating_navigation_spreedly_content_audit.jpg)
+![A closer look at Spreedly's navigation.](/images/content-audit/investigating_navigation_spreedly_content_audit.jpg)
 
 Navigation was a main point of interest and a starting point. It was important for me to know how users access pages and content, the main navigation paths, secondary or tertiary methods of navigation, and how they can be improved. During that process I also recorded each page’s `URL` , `<title>` , and  `meta` description. Each for similar reasons. What they were, how they were being used in the context of SEO and keyword optimization, and if they could be improved. I also looked for possible uses of existing keywords and how they were being used if any.
 

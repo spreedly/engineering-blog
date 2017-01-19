@@ -1,0 +1,14 @@
+---
+pageable: true
+---
+
+- title 'Article categories'
+
+h1
+  | categories
+ul
+  - blog.tags.sort.each do |(tag, articles)|
+    // li.tag-list
+    a href="#{tag_path(tag)}"
+      .tag-label
+        | #{tag} (#{articles.size}) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -4,6 +4,7 @@ author: Ryan Daigle
 author_email: ryan@spreedly.com
 author_url: https://twitter.com/rwdaigle
 date: 2016-06-10
+tags: hiring
 ---
 
 *A guide to creating fair and effective hiring work samples.*
@@ -12,6 +13,7 @@ It’s a common topic of discussion amongst technical organizations that the tra
 
 While this may be a step in the right direction, it’s still a hugely biased and ineffective approach to hiring. In this post I explain how we do hiring at Spreedly and, specifically, how we measure a candidate’s competence using job and company specific work samples.
 
+READMORE
 
 ## What’s wrong with programming puzzles?
 

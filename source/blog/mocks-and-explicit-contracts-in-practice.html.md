@@ -1,19 +1,23 @@
 ---
-title: "Mocks and Explicit Contracts: In Practice"
+title: "Mocks and Explicit Contracts: In Practice w/ Elixir"
 author: David Santoso
 author_email: david@spreedly.com
 author_url: https://twitter.com/ddsaso
 date: 2016-11-4
+tags: elixir, testing
+image_src: /images/mocks/leader.jpg
 ---
 Writing tests for your code is easy. Writing good tests is much harder. Now throw in requests to external APIs that can return (or not return at all!) a myriad of different responses and we’ve just added a whole new layer of possible cases to our tests. When it comes to the web, it’s easy to overlook the complexity when working with an external API. It’s become so second nature that writing a line of code to initiate an HTTP request can become as casual as any other line of code within your application. However that’s not always the case.
 
-We recently released the first version of our support application. You can see it live at [https://support.spreedly.com](https://support.spreedly.com). The goal we had in mind for the support application was to more clearly display customer transaction data for debugging failed transactions. We decided to build a separate web application to layer on top of the Spreedly API which could deal with the authentication mechanics as well as transaction querying to keep separate concerns between our core transactional API and querying and displaying data. I should also mention that the support application is our first public facing Elixir application in production!
+We recently released the first version of our self-service debugging tool. You can see it live at [https://debug.spreedly.com](https://debug.spreedly.com). The goal we had in mind for the support application was to more clearly display customer transaction data for debugging failed transactions. We decided to build a separate web application to layer on top of the Spreedly API which could deal with the authentication mechanics as well as transaction querying to keep separate concerns between our core transactional API and querying and displaying data. I should also mention that the support application is our first public facing Elixir application in production!
+
+READMORE
 
 Since this was a separate service, it meant that we needed to make HTTP requests from the support application to our API in order to pull and display data. Although we had solid unit tests with example responses we’d expect from our API, we wanted to also incorporate remote tests which actually hit the production API so we could occasionally do a real world full stack test. Remote tests aren’t meant to be executed every test run, only when we want that extra ounce of confidence.
 
 As we started looking into testing Elixir applications against external dependencies, we came across José Valim’s excellent blog post, [Mocks and Explicit Contracts](http://blog.plataformatec.com.br/2015/10/mocks-and-explicit-contracts/). If you haven’t read it already, you should check it out. It has a lot of great thoughts and will give this post a little more context. It seemed like a solid approach for building less brittle tests so we thought we implement it ourselves and see how well it would work in reality and if it could provide what we needed to include remote tests along side our unit tests. Here’s how our experience with this approach went…
 
-### Pluggable clients
+## Pluggable clients
 
 The first thing we needed to do was update the Spreedly API client in the support application to be dynamically selected instead of hardcoded. In production we want to build real HTTP requests, but for unit tests we want to replace that module with a mock module which just returns simulated responses.
 
@@ -33,7 +37,6 @@ In line 3 above, you can see that the `@core` constant is being dynamically set 
 Once we’ve got that set, now we can configure the module to use in our application config. Notice that the module returned on lookup changes depending on the environment we’re currently running. We really like the explicitness here!
 
 ```elixir
-
 # In config/test.exs
 config :support_app, :core, SupportApp.Core.Mock
 
@@ -41,7 +44,7 @@ config :support_app, :core, SupportApp.Core.Mock
 config :support_app, :core, SupportApp.Core.Api
 ```
 
-### Enforceable interfaces
+## Enforceable interfaces
 
 So, what do those two modules look like anyway? Well, from our `Transaction` module above we know that both the HTTP client and the mock will need to have a  `transaction/3`  function which will take care of getting us a transaction whether it be from the Spreedly API or a simulated one we build ourselves.
 
@@ -104,7 +107,7 @@ end
 
 And that’s it for setup!
 
-### Test segmentation
+## Test segmentation
 
 Up to this point we’ve followed the approach as outlined by José’s blog post and created an explicit contract between our modules, allowing us to change underlying implementations depending on the environment we’re running in. That is, a mock module to be used during test and an Spreedly API client in production. However, our original plan was to include remote tests that actually hit our production API so how can we enable that in our tests?
 

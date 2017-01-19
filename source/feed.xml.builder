@@ -1,24 +1,23 @@
 xml.instruct!
-xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://engineering.spreedly.com/"
-  xml.title "Spreedly Engineering"
-  xml.subtitle "Spreedly Engineering's Team Blog"
-  xml.id URI.join(site_url, blog.options.prefix.to_s)
-  xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
-  xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
+xml.feed 'xmlns' => 'http://www.w3.org/2005/Atom' do
+  xml.title data.settings.site_title
+  xml.id URI.join(data.settings.site_url, blog.options.prefix.to_s)
+  xml.link 'href' => URI.join(data.settings.site_url, blog.options.prefix.to_s)
+  xml.link 'href' => URI.join(data.settings.site_url, current_page.path), 'rel' => 'self'
   xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
-  xml.author { xml.name "Spreedly Engineering" }
+  xml.author { xml.name data.settings.site_author }
 
   blog.articles[0..5].each do |article|
     xml.entry do
       xml.title article.title
-      xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
-      xml.id URI.join(site_url, article.url)
+      article_url_escaped = URI.escape(article.url)
+      xml.link 'rel' => 'alternate', 'href' => URI.join(data.settings.site_url, article_url_escaped)
+      xml.id URI.join(data.settings.site_url, article_url_escaped)
       xml.published article.date.to_time.iso8601
       xml.updated File.mtime(article.source_file).iso8601
-      xml.author article.data.author
-      xml.summary article.summary, "type" => "html"
-      xml.content article.body, "type" => "html"
+      # xml.author { xml.name data.settings.site_author }
+      xml.summary article.summary, 'type' => 'html'
+      xml.content article.body, 'type' => 'html'
     end
   end
 end
