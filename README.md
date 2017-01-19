@@ -7,6 +7,7 @@
 To run the app locally:
 
 ```bash
+$ gem install bundler
 $ bundle
 $ bundle exec middleman
 ```
