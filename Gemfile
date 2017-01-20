@@ -12,6 +12,9 @@ gem 'middleman-syntax'
 # Live-reloading plugin
 gem 'middleman-livereload'
 
+gem 'middleman-compass'
+gem "breakpoint", "~>2.7"
+
 # For feed.xml.builder
 gem 'builder'
 

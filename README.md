@@ -1,6 +1,6 @@
 # Spreedly Engineering Blog
 
-[Middleman](https://middlemanapp.com) app for the [Spreedly Engineering Blog](https://engineering.spreedly.com) using the [Drops middleman template](https://github.com/5t111111/middleman-blog-drops-template).
+[Middleman](https://middlemanapp.com) app for the [Spreedly Engineering Blog](https://engineering.spreedly.com) loosely based on the [Drops middleman template](https://github.com/5t111111/middleman-blog-drops-template).
 
 ## Run
 
@@ -9,7 +9,6 @@ To run the app locally:
 ```bash
 $ gem install bundler
 $ bundle
-$ npm install
 $ bundle exec middleman
 ```
 
@@ -26,24 +25,22 @@ $ heroku git:remote -a spreedly-engineering-staging -r staging
 $ heroku git:remote -a spreedly-engineering -r prod
 ```
 
-### Deploy to production
-
-When you're ready to deploy, you can run this:
-
-```shell
-$ git push prod master
-```
-
-After deploying, the production docs should then be visible at https://spreedly-engineering.spreedly.com (or https://spreedly-engineering.herokuapp.com if DNS is not yet configured or in flux).
-
-There are two doc app instances on Heroku, `spreedly-engineering-staging` (staging) and `spreedly-engineering` (production).
-
 ### Deploy to staging
 
-This is the same as deploying to production, except the command looks like this:
+When you're ready to deploy, you can run this:
 
 ```shell
 $ git push staging master
 ```
 
 To view the staging docs go to http://spreedly-engineering-staging.herokuapp.com/, or invoke `$ heroku open -r staging`.
+
+### Deploy to production
+
+This is the same as deploying to staging, except the command looks like this:
+
+```shell
+$ git push prod master
+```
+
+After deploying, the site should then be visible at https://engineering.spreedly.com.

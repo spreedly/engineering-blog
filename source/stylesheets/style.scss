@@ -1,7 +1,7 @@
-@import "compass-mixins/lib/compass/reset";
-@import "compass-mixins/lib/compass";
+@import "compass/reset";
+@import "compass";
 
-@import 'breakpoint-sass/stylesheets/breakpoint';
+@import 'breakpoint';
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:300|Raleway');
 

@@ -66,15 +66,15 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 #     input: 'GFM'
 
 # Ignore stylesheet bundle because it is handled by webpack
-ignore 'stylesheets/style'
+# ignore 'stylesheets/style'
 
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash
@@ -96,6 +96,9 @@ end
 # Syntax highlight settings
 activate :syntax
 
+# Not sure why I have to do this
+proxy "/stylesheets/style.css", "/stylesheets/style"
+
 # Activate Directory Indexes
 # activate :directory_indexes
 
@@ -112,8 +115,8 @@ activate :syntax
 #          source: '.tmp/dist',
 #          latency: 1
 
- activate :external_pipeline,
-   name: :webpack,
-   command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
-   source: ".tmp/dist",
-   latency: 1
+ # activate :external_pipeline,
+ #   name: :webpack,
+ #   command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+ #   source: ".tmp/dist",
+ #   latency: 1
