@@ -4,12 +4,16 @@ author: Adrian Dunston
 author_email: adrian@spreedly.com
 author_url: https://twitter.com/bitcapulet
 date: 2016-10-19
+tags: elixir
+image_src: /images/how-do-i-genstage/leader.jpg
 ---
+
 I’m new to Elixir. And Erlang. And OTP’s GenServer. And GenStage. While I’ve got beginner’s-eye, I’m going to share knowledge for a general audience. So this is a doorknob-simple look at GenStage. With clear examples and *I Love Lucy* references. Enjoy!
 
 READMORE
 
 ## What is a GenStage?
+
 <div style="display:inline; float: right; margin-left: 3em; margin-right: 1em; font-size: small; font-style: italic">
   <img alt="Lucy studies papers" src="/images/how-do-i-genstage/studious-lucy.jpg" style="height: 185px; width: auto;display:block">
   Fun and scalable? Interesting...

@@ -1,15 +1,17 @@
 ---
-title: "Mocks and Explicit Contracts: In Practice"
+title: "Mocks and Explicit Contracts: In Practice w/ Elixir"
 author: David Santoso
 author_email: david@spreedly.com
 author_url: https://twitter.com/ddsaso
 date: 2016-11-4
+tags: elixir, testing
+image_src: /images/mocks/leader.jpg
 ---
 Writing tests for your code is easy. Writing good tests is much harder. Now throw in requests to external APIs that can return (or not return at all!) a myriad of different responses and we’ve just added a whole new layer of possible cases to our tests. When it comes to the web, it’s easy to overlook the complexity when working with an external API. It’s become so second nature that writing a line of code to initiate an HTTP request can become as casual as any other line of code within your application. However that’s not always the case.
 
-READMORE
+We recently released the first version of our self-service debugging tool. You can see it live at [https://debug.spreedly.com](https://debug.spreedly.com). The goal we had in mind for the support application was to more clearly display customer transaction data for debugging failed transactions. We decided to build a separate web application to layer on top of the Spreedly API which could deal with the authentication mechanics as well as transaction querying to keep separate concerns between our core transactional API and querying and displaying data. I should also mention that the support application is our first public facing Elixir application in production!
 
-We recently released the first version of our support application. You can see it live at [https://support.spreedly.com](https://support.spreedly.com). The goal we had in mind for the support application was to more clearly display customer transaction data for debugging failed transactions. We decided to build a separate web application to layer on top of the Spreedly API which could deal with the authentication mechanics as well as transaction querying to keep separate concerns between our core transactional API and querying and displaying data. I should also mention that the support application is our first public facing Elixir application in production!
+READMORE
 
 Since this was a separate service, it meant that we needed to make HTTP requests from the support application to our API in order to pull and display data. Although we had solid unit tests with example responses we’d expect from our API, we wanted to also incorporate remote tests which actually hit the production API so we could occasionally do a real world full stack test. Remote tests aren’t meant to be executed every test run, only when we want that extra ounce of confidence.
 

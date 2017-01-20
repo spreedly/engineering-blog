@@ -1,20 +1,19 @@
 ---
 pageable: true
 per_page: 12
---- 
+---
 
 - title tagname
 
 h1
-  | Articles tagged '
   = tagname
-  | '
+  |  articles
 hr
 - if paginate && num_pages > 1
   p
-    | Page 
+    | Page
     = page_number
-    |  of 
+    |  of
     = num_pages
   - if prev_page
     p

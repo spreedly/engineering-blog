@@ -4,15 +4,17 @@ author: Dane Wesolko
 author_email: dane@spreedly.com
 author_url: https://twitter.com/DanesBrains
 date: 2016-10-06
+tags: design
+image_src: /images/support-app/leader.png
 ---
 
 ![Spreedly support app open in a browswer window](images/support-app/support_app.jpg)
 
-As the Lead Designer at [Spreedly](https://www.spreedly.com/) I am fortunate (and excited) to work on many different types of projects. I was recently involved in designing our new [Support App](https://support.spreedly.com/). It’s a place where users can find answers to common support issues and do some basic debugging on their financial transactions. In this article I share insights into my process and some of the steps that were involved along the way.
+As the Lead Designer at [Spreedly](https://www.spreedly.com/) I am fortunate (and excited) to work on many different types of projects. I was recently involved in designing our new [Debug App](https://debug.spreedly.com/). It’s a place where users can find answers to common support issues and do some basic debugging on their financial transactions. In this article I share insights into my process and some of the steps that were involved along the way.
+
+I am a big fan of the design methodology behind Jeff Gothelf’s [Lean UX](http://amzn.to/2afYWF2). If you haven’t read it - check it out. Short read, easy to understand, and has a lot to do with my thinking behind the process that went into designing Spreedly’s self-service debugging app.
 
 READMORE
-
-I am a big fan of the design methodology behind Jeff Gothelf’s [Lean UX](http://amzn.to/2afYWF2). If you haven’t read it - check it out. Short read, easy to understand, and has a lot to do with my thinking behind the process that went into designing [Spreedly](https://support.spreedly.com/)’s support app.
 
 Lean UX focuses on the idea of creating whats called an MVP (minimum viable product). It’s a way to quickly design, build, ship, learn, and iterate on your initial assumption. Precisely what I set out to do when working with the engineering and support teams on this project.
 

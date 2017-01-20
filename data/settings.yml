@@ -1,10 +1,10 @@
 site_url: 'https://engineering.spreedly.com'
-site_title: 'Spreedly | Engineering'
+site_title: 'Spreedly Engineering'
 site_description: 'The culture, practices, and perspectives of the Spreedly Engineering team'
 
 site_author: 'Spreedly Engineering'
 site_author_profile: 'The fine Engineering folks at Spreedly'
-site_author_image: 'profile.png'
+site_author_image: 'spreedly-s.png'
 
 reverse_title: true
 social_links:

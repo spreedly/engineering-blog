@@ -22,7 +22,7 @@
 }
 
 html {
-  background: $blind-gray;
+  background: $main-dark;
   font-size: $em-normalize-ratio;
 }
 
@@ -43,14 +43,7 @@ h1 {
   font-size: $h1-font-size;
   line-height: $h1-line-height;
   margin: $h1-font-size 0;
-
-  a {
-    color: $default-text-color;
-
-    &:hover {
-      color: $link-color;
-    }
-  }
+  text-align: center;
 }
 
 h2 {
@@ -94,6 +87,10 @@ ol {
 
 a {
   color: $link-color;
+
+  &:hover {
+    color: darken($link-color, 6);
+  }
 }
 
 pre {

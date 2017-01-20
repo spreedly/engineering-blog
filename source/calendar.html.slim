@@ -1,6 +1,6 @@
 ---
 pageable: true
---- 
+---
 
 - case page_type
 - when 'day'
@@ -11,7 +11,7 @@ pageable: true
   - title year.to_s
 
 h1
-  | Archive for 
+  | archive for 
   - case page_type
   - when 'day'
     = Date.new(year, month, day).strftime('%b %e %Y')
@@ -22,9 +22,9 @@ h1
 hr
 - if paginate && num_pages > 1
   p
-    | Page 
+    | Page
     = page_number
-    |  of 
+    |  of
     = num_pages
   - if prev_page
     p

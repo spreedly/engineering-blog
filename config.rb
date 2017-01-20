@@ -97,7 +97,7 @@ end
 activate :syntax
 
 # Activate Directory Indexes
-activate :directory_indexes
+# activate :directory_indexes
 
 # Activate Deploy
 activate :deploy do |deploy|

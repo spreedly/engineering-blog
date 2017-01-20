@@ -4,16 +4,15 @@ author: Stephen Ball
 author_email: stephen@spreedly.com
 author_url: https://twitter.com/stephenballnc
 date: 2016-07-11
+tags: elixir
 ---
 
 *A brief glimpse into Elixir from an object oriented perspective.*
 
 > Concurrency is complicated so Elixir must be complicated.
 
-<!-- -->
 > Learning functional programming means giving up all my knowledge about object oriented programming.
 
-<!-- -->
 > Why Elixir? I haven't needed it so far. It's probably only for really complicated computer science-like stuff that I'm not doing.
 
 If you're looking at Elixir from the perspective of an object oriented scripting language like Ruby, Python, PHP, or even Perl then you've probably read, heard, or made statements like those above. Even if just to yourself.

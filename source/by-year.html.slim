@@ -1,7 +1,7 @@
 - title 'By Year'
 
 h1
-  | Articles By Year
+  | articles by year
 ul.archive-list
   - blog.articles.group_by { |a| a.date.year }.each do |year, articles|
     li

@@ -1,7 +1,7 @@
 .footer-wrapper
   .author
     .image-wrapper
-      a href="/author/"
+      a href="https://www.spreedly.com"
         img src="/images/#{data.settings.site_author_image}" alt="author"
   .copyright
     i.fa.fa-copyright
@@ -9,5 +9,5 @@
     = Time.now.year
     = ' '
     = link_to "#{data.settings.site_title}", "/"
-    |  - 
-    = data.settings.site_author
+    |  -
+    = data.settings.site_description

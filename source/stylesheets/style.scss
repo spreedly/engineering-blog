@@ -3,9 +3,9 @@
 
 @import 'breakpoint-sass/stylesheets/breakpoint';
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('https://fonts.googleapis.com/css?family=Oswald:300|Raleway');
 
-@import "variables";
+@import "spreedly_variables";
 @import "base";
 @import "main";
 @import "header";

@@ -45,6 +45,12 @@ def page_description
   description.gsub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').gsub(/[\r\n]/, ' ')
 end
 
+def strip_images(html)
+  doc = Nokogiri::HTML(html)
+  doc.search('img').each { |i| i.parent.remove }
+  doc.to_html
+end
+
 def analytics_account
   google_analytics_account
   rescue NameError

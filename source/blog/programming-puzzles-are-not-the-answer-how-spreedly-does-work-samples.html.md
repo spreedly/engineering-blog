@@ -4,6 +4,7 @@ author: Ryan Daigle
 author_email: ryan@spreedly.com
 author_url: https://twitter.com/rwdaigle
 date: 2016-06-10
+tags: hiring
 ---
 
 *A guide to creating fair and effective hiring work samples.*

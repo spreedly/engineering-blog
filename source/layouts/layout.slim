@@ -25,11 +25,11 @@ html
             i.fa.fa-clock-o
             span.posted-date
               = format_date(current_article.date)
-          .tag-labels
-            - current_article.tags.each do |tag|
-              a href="#{tag_path(tag)}"
-                small.tag-label
-                  = tag
+            span.tag-labels
+              - current_article.tags.each do |tag|
+                a href="#{tag_path(tag)}"
+                  small.tag-label
+                    = tag
           hr.article-header-separator
         = yield
         - unless current_article.nil?

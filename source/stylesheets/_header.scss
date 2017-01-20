@@ -1,8 +1,8 @@
 header {
-  background-image: url("../images/drops.png");
-  background-position: -300px 40px;
-  background-repeat: no-repeat;
-  height: 320px;
+  // background-image: url("../images/header-bg.png");
+  // background-position: -300px 40px;
+  // background-repeat: no-repeat;
+  height: 150px;
   margin: 0 auto;
 
   @include breakpoint($large-screen) {
@@ -10,13 +10,13 @@ header {
     background-size: contain;
   }
 
-  @include breakpoint($large-screen) {
-    height: 400px;
-  }
+  // @include breakpoint($large-screen) {
+  //   height: 400px;
+  // }
 
   .top-menu {
     @include pie-clearfix;
-    background-color: $blind-gray;
+    background-color: $main-dark;
     height: $top-menu-height;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ header {
         color: $top-menu-text-color;
 
         &:hover {
-          color: $whity-light-gray;
+          color: darken($top-menu-text-color, 6);
         }
       }
 
@@ -47,14 +47,18 @@ header {
         width: 80%;
 
         @include breakpoint($large-screen) {
-          margin-left: 30px;
+          margin-left: 15px;
         }
 
         ul {
           @include horizontal-list;
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 15px;
+          padding-top: 1px;
 
           li {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin: 0;
 
             &:after {
@@ -75,7 +79,7 @@ header {
         width: 10%;
 
         @include breakpoint($large-screen) {
-          margin-right: 60px;
+          margin-right: 20px;
           text-align: right;
         }
 
@@ -88,11 +92,11 @@ header {
 
   .logo {
     margin: 0 auto;
-    padding: 260px 20px 0 160px;
+    padding: 125px 20px 0 50px;
 
-    @include breakpoint($large-screen) {
-      padding: 250px 20px 0;
-    }
+    // @include breakpoint($large-screen) {
+    //   padding: 250px 20px 0;
+    // }
 
     $site-title-logo-image: false;
 
@@ -104,15 +108,17 @@ header {
       }
     } @else {
       .logo-text {
-        color: #1d1d1d;
+        color: $hardcore-gray;
         display: block;
-        font-size: 6vw;
+        font-size: 2em;
         margin: 0 auto;
         text-align: center;
+        font-family: $title-font;
+        white-space: nowrap;
 
-        @include breakpoint($large-screen) {
-          font-size: 2.5em;
-        }
+        // @include breakpoint($large-screen) {
+        //   font-size: 2.5em;
+        // }
       }
     }
   }
