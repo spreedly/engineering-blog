@@ -19,10 +19,10 @@ gem 'builder'
 gem 'slim'
 
 # For GitHub Pages deployment
-gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+# gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 # For S3 deployment
-gem 'middleman-s3_sync'
+# gem 'middleman-s3_sync'
 
 # For Markdown
 # gem 'kramdown'
@@ -35,4 +35,4 @@ gem 'puma'
 gem 'rack-contrib'
 
 # Heroku New Relic Addon
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'

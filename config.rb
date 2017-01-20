@@ -100,11 +100,11 @@ activate :syntax
 # activate :directory_indexes
 
 # Activate Deploy
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
+# activate :deploy do |deploy|
+#   deploy.deploy_method = :git
+#   deploy.branch = 'master'
+#   deploy.build_before = true
+# end
 
 activate :external_pipeline,
          name: :webpack,
