@@ -25,7 +25,8 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-s3_sync'
 
 # For Markdown
-gem 'kramdown'
+# gem 'kramdown'
+gem 'redcarpet'
 
 # Web server
 gem 'puma'

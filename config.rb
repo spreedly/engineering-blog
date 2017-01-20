@@ -12,7 +12,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  blog.layout = "article_layout"
+  # blog.layout = "article_layout"
   blog.summary_separator = /READMORE/
   blog.summary_length = 500
   # blog.year_link = "{year}.html"
@@ -55,13 +55,15 @@ page '/robots.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # Markdown settings
-set :markdown_engine, :kramdown
-set :markdown,
-    layout_engine: :slim,
-    tables: true,
-    autolink: true,
-    smartypants: true,
-    input: 'GFM'
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+# set :markdown_engine, :kramdown
+# set :markdown,
+#     layout_engine: :slim,
+#     tables: true,
+#     autolink: true,
+#     smartypants: true,
+#     input: 'GFM'
 
 # Ignore stylesheet bundle because it is handled by webpack
 ignore 'stylesheets/style'
@@ -95,7 +97,7 @@ end
 activate :syntax
 
 # Activate Directory Indexes
-# activate :directory_indexes
+activate :directory_indexes
 
 # Activate Deploy
 activate :deploy do |deploy|
