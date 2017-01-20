@@ -1,1 +1,1 @@
-web: bin/start_nginx
+web: bundle exec puma -p $PORT -e $RACK_ENV

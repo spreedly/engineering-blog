@@ -1,6 +1,6 @@
 # Spreedly Engineering Blog
 
-[Middleman](https://middlemanapp.com) app for the [Spreedly Engineering Blog](https://engineering.spreedly.com).
+[Middleman](https://middlemanapp.com) app for the [Spreedly Engineering Blog](https://engineering.spreedly.com) using the [Drops middleman template](https://github.com/5t111111/middleman-blog-drops-template).
 
 ## Run
 
@@ -9,6 +9,7 @@ To run the app locally:
 ```bash
 $ gem install bundler
 $ bundle
+$ npm install
 $ bundle exec middleman
 ```
 

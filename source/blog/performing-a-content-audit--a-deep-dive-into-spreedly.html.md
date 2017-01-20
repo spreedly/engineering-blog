@@ -10,6 +10,8 @@ date: 2017-01-09
 
 I came on-board in April of 2016. Post on-boarding process and adjustment to the new role, preliminary design research began. Payments was a new industry and so was Spreedly. Managing the marketing website became a responsibility. It was time to learn a few things. After speaking with colleagues the path was clear: perform a content audit . And so I did.
 
+READMORE
+
 If you’ve never heard of a content audit before, or have but don’t know what one is, no biggie; it’s pretty simple. A content audit is literally an audit of your content. What that means can vary but in most cases it’s how many pages of a site, what keywords it ranks for, usage of `h1/h2` tags, how many images, etc. Why you would perform a content audit depends upon your role and goals. Marketers may look at keyword performance, content creators may need to develop a content strategy, or designers may be improving the user’s experience.
 
 Being as a content audit can be performed by different people for a variety of reasons, I decided I would look at things deemed beneficial to the role of designer at Spreedly. I needed to learn the nuts and bolts of the system I was working with and get an understanding of what I would/could do moving forward. Up-front there weren’t any initial assumptions of what I would find; I kept that open since this was to be an exploratory process.

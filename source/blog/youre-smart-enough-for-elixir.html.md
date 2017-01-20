@@ -20,6 +20,8 @@ If you're looking at Elixir from the perspective of an object oriented scripting
 
 I'm here to tell you that I've been there. I've professionally programmed in each of those languages over my career. Now I'm coming to Elixir from a recent background in Ruby. Let me assure you — you got this!
 
+READMORE
+
 Elixir seemed like a scary, fascinating, almost unbelievable world. Serving web requests by creating a new server for each individual request? Madness! No data mutation? Isn’t that what data, you know, does? Processes that supervise other processes? How does that even work?
 
 After a few weeks of using Elixir (and some Erlang) nearly full-time at work, I’ve come to realize my conception of Elixir was much more complicated than Elixir itself. In this post I’ll share what I’ve learned about three areas: the complexity of concurrency, what functional programming in Elixir is like, and why Elixir is interesting.

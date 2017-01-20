@@ -8,6 +8,8 @@ date: 2016-08-04
 
 As an employer, it’s easy for an organization like Spreedly to complain about the difficulties of the hiring process. Huge investments of time with uncertain results, noisy pipelines of dubiously qualified candidates, lying recruiters, spamming spammers who can’t read, lack of good science around hiring processes and their effectiveness, etc. Isn’t an employer’s life tough?
 
+READMORE
+
 But it’s all just whining, because you know who has it tough? Candidates applying for jobs have it tough. They have to put their whole work history in front of a total stranger, invest time and money with no guarantee of a favorable outcome, make a series of decisions that will probably affect the rest of their life, do right by existing commitments while trying to impress us, and at the end of the day get a binary “yes/no” judgement of their ability to do what they believe they’re good at doing, all with little to no recourse or appeal. It makes me tired just thinking about it, but that’s the reality of what it means to go looking for a new job.
 
 We can’t change the underlying realities of what it means to be a job applicant, and one could even argue that a lot of what makes the process so grueling is intrinsic to the transaction being contemplated. Applying for a job will never be a free or easy process for either the potential employer or potential employee. But what we can do, and what we strive to do here at Spreedly, is to show real respect for the time and energy being put into the process by applicants.
