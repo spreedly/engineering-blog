@@ -106,8 +106,14 @@ activate :syntax
 #   deploy.build_before = true
 # end
 
-activate :external_pipeline,
-         name: :webpack,
-         command: build? ? '$(npm bin)/webpack --bail -p' : '$(npm bin)/webpack --watch -d --progress --color',
-         source: '.tmp/dist',
-         latency: 1
+# activate :external_pipeline,
+#          name: :webpack,
+#          command: build? ? '$(npm bin)/webpack --bail -p' : '$(npm bin)/webpack --watch -d --progress --color',
+#          source: '.tmp/dist',
+#          latency: 1
+
+ activate :external_pipeline,
+   name: :webpack,
+   command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+   source: ".tmp/dist",
+   latency: 1

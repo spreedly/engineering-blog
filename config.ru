@@ -1,7 +1,7 @@
 require 'rack'
 require 'rack/contrib/try_static'
 # Heroku New Relic Addon
-require 'newrelic_rpm' if ENV['RACK_ENV'] == 'production'
+# require 'newrelic_rpm' if ENV['RACK_ENV'] == 'production'
 
 # Build the static site when the app boots
 `npm install`
