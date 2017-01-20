@@ -30,12 +30,20 @@ module.exports = {
         loader: 'url?mimetype=image/png'
       },
       {
-        test: /\.scss$/,
+        test: /.*\.scss$/,
         loader: ExtractTextPlugin.extract(
-          'style',
-          `css?sourceMap!sass?sourceMap&includePaths[]=${path.join(__dirname, 'node_modules')}`
+          "style",
+          "css!sass?sourceMap&includePaths[]=" + __dirname + "/node_modules"
         )
-      }
+      },
+      { test: /\.css$/, loader: "style!css" }
+      // {
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract(
+      //     'style',
+      //     `css?sourceMap!sass?sourceMap&includePaths[]=${path.join(__dirname, 'node_modules')}`
+      //   )
+      // }
     ]
   },
 
