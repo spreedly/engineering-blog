@@ -1,5 +1,5 @@
 main {
-  margin: 80px auto;
+  margin: 1em auto;
   width: 100%;
 
   @include breakpoint($content-body-width) {
@@ -13,7 +13,7 @@ main {
 
     .article-title {
       margin-bottom: 1rem;
-      margin-top: 7rem;
+      // margin-top: 7rem;
       text-align: center;
       font-family: $title-font;
     }
@@ -54,16 +54,14 @@ main {
       // }
     }
 
-    .posted-date-wrapper {
+    .metadata-wrapper {
       color: $gentle-gray;
       margin-bottom: 25px;
       margin-top: 10px;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
       text-align: center;
-
-      .posted-date {
-        padding-left: .4em;
-        padding-right: 2em;
-      }
     }
 
     .summary {

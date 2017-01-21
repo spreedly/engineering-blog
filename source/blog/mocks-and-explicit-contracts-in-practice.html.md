@@ -37,7 +37,6 @@ In line 3 above, you can see that the `@core` constant is being dynamically set 
 Once we’ve got that set, now we can configure the module to use in our application config. Notice that the module returned on lookup changes depending on the environment we’re currently running. We really like the explicitness here!
 
 ```elixir
-
 # In config/test.exs
 config :support_app, :core, SupportApp.Core.Mock
 

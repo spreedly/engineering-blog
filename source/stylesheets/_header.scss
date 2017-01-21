@@ -2,7 +2,7 @@ header {
   // background-image: url("../images/header-bg.png");
   // background-position: -300px 40px;
   // background-repeat: no-repeat;
-  height: 150px;
+  height: 15em;
   margin: 0 auto;
 
   @include breakpoint($large-screen) {
@@ -92,7 +92,7 @@ header {
 
   .logo {
     margin: 0 auto;
-    padding: 125px 20px 0 50px;
+    padding: 3em 0 0 0;
 
     // @include breakpoint($large-screen) {
     //   padding: 250px 20px 0;
@@ -114,7 +114,7 @@ header {
         margin: 0 auto;
         text-align: center;
         font-family: $title-font;
-        white-space: nowrap;
+        // white-space: nowrap;
 
         // @include breakpoint($large-screen) {
         //   font-size: 2.5em;

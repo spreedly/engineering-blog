@@ -21,15 +21,17 @@ html
         - unless current_article.nil?
           h1.article-title
             = current_article.title
-          .posted-date-wrapper
-            i.fa.fa-clock-o
-            span.posted-date
-              = format_date(current_article.date)
-            span.tag-labels
-              - current_article.tags.each do |tag|
-                a href="#{tag_path(tag)}"
-                  small.tag-label
-                    = tag
+          .metadata-wrapper
+            | Published&nbsp;
+            = format_date(current_article.date)
+            |  by&nbsp;
+            a href="#{current_article.data.author_url}"
+              = current_article.data.author
+            |  in&nbsp;
+            - current_article.tags.each do |tag|
+              a href="#{tag_path(tag)}"
+                small.tag-label
+                  = tag
           hr.article-header-separator
         = yield
         - unless current_article.nil?
