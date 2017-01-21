@@ -47,7 +47,7 @@ Let’s look at a real-life Lucy chocolates problem. Maybe you want to:
 3. **auto-create a collage of images based on those tweets.**
 
 
-![From Twitter to Google to image generator](images/how-do-i-genstage/three-steps.png)
+![From Twitter to Google to image generator](/images/how-do-i-genstage/three-steps.png)
 
 Pulling words from a Twitter feed is blazing fast. Google image searching is relatively slow. Photo-editing is glacial.
 
@@ -164,7 +164,7 @@ The return value is intended to look like the return value from an asynchronous 
 
 Note that the `things` returned here is a list. It has to be a list. It can’t be a not-list. If you try to return something that is not a list, you will get `** (stop) bad return value: {:noreply, :decidedly_not_a_list, :ok}` I want to pause here and note that `bad return value` is not the most helpful error message. Though I will also say that it’s more helpful than `bad cast` .
 
-![Search for bad cast leads to Breaking Bad](images/how-do-i-genstage/bad-cast.gif)
+![Search for bad cast leads to Breaking Bad](/images/how-do-i-genstage/bad-cast.gif)
 
 ```elixir
 ## ProducerConsumer
@@ -251,7 +251,7 @@ There we go! That’s the final Consumer getting involved. As soon as this happe
 
 Fine! Let’s go back to our earlier example. I want to pull tweets from some feed, Google image search the words, and then use an image manipulator to make collages out of those images. I've put further description in comments below.
 
-![From Twitter to Google to image generator](images/how-do-i-genstage/three-steps.png)
+![From Twitter to Google to image generator](/images/how-do-i-genstage/three-steps.png)
 
 ```elixir
     # Let's pretend this library is real
