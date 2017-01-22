@@ -2,7 +2,7 @@ header {
   // background-image: url("../images/header-bg.png");
   // background-position: -300px 40px;
   // background-repeat: no-repeat;
-  height: 15em;
+  // height: 15em;
   margin: 0 auto;
 
   @include breakpoint($large-screen) {
@@ -44,7 +44,7 @@ header {
       .top-menu-list {
         float: left;
         margin-left: 15px;
-        width: 80%;
+        width: 100%;
 
         @include breakpoint($large-screen) {
           margin-left: 15px;
@@ -79,7 +79,7 @@ header {
         width: 10%;
 
         @include breakpoint($large-screen) {
-          margin-right: 20px;
+          margin-right: 30px;
           text-align: right;
         }
 
