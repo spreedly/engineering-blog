@@ -22,8 +22,7 @@ footer {
     }
 
     .copyright {
-      padding-bottom: 20px;
-      padding-top: 20px;
+      padding-bottom: 50px;
       text-align: center;
     }
 
@@ -34,9 +33,9 @@ footer {
         float: right;
 
         img {
-          background-color: $main-dark;
-          @include border-radius(75px);
-          @include box-shadow($main-dark 0 -1px 0 15px);
+          // background-color: $main-dark;
+          // @include border-radius(75px);
+          // @include box-shadow($main-dark 0 -1px 0 15px);
           height: 75px;
           margin-right: 40px;
           margin-top: -40px;

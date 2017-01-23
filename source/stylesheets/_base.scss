@@ -40,24 +40,26 @@ body {
 }
 
 h1 {
+  font-family: $title-font;
   font-size: $h1-font-size;
   line-height: $h1-line-height;
-  margin: $h1-font-size 0;
+  margin: $h1-font-size 0 1em 0;
   text-align: center;
 }
 
 h2 {
-  font-size: $h2-font-size;
+  font-family: $title-font;
+  font-size: 1.8em;
   line-height: $h2-line-height;
-  margin: $h2-font-size + .8rem 0;
+  margin: $h2-font-size + 2rem 0 1.5rem;
   word-wrap: break-word;
 }
 
 h3 {
-  font-size: $h3-font-size;
-  font-weight: bold;
+  font-family: $title-font;
+  font-size: 1.3em;
   line-height: $h3-line-height;
-  margin: $h3-font-size + 1.5rem 0;
+  margin: $h3-font-size + 1rem 0 0.5em 0;
   word-wrap: break-word;
 }
 

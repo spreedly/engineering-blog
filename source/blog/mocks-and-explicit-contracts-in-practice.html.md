@@ -17,7 +17,7 @@ Since this was a separate service, it meant that we needed to make HTTP requests
 
 As we started looking into testing Elixir applications against external dependencies, we came across José Valim’s excellent blog post, [Mocks and Explicit Contracts](http://blog.plataformatec.com.br/2015/10/mocks-and-explicit-contracts/). If you haven’t read it already, you should check it out. It has a lot of great thoughts and will give this post a little more context. It seemed like a solid approach for building less brittle tests so we thought we implement it ourselves and see how well it would work in reality and if it could provide what we needed to include remote tests along side our unit tests. Here’s how our experience with this approach went…
 
-### Pluggable clients
+## Pluggable clients
 
 The first thing we needed to do was update the Spreedly API client in the support application to be dynamically selected instead of hardcoded. In production we want to build real HTTP requests, but for unit tests we want to replace that module with a mock module which just returns simulated responses.
 
@@ -44,7 +44,7 @@ config :support_app, :core, SupportApp.Core.Mock
 config :support_app, :core, SupportApp.Core.Api
 ```
 
-### Enforceable interfaces
+## Enforceable interfaces
 
 So, what do those two modules look like anyway? Well, from our `Transaction` module above we know that both the HTTP client and the mock will need to have a  `transaction/3`  function which will take care of getting us a transaction whether it be from the Spreedly API or a simulated one we build ourselves.
 
@@ -107,7 +107,7 @@ end
 
 And that’s it for setup!
 
-### Test segmentation
+## Test segmentation
 
 Up to this point we’ve followed the approach as outlined by José’s blog post and created an explicit contract between our modules, allowing us to change underlying implementations depending on the environment we’re running in. That is, a mock module to be used during test and an Spreedly API client in production. However, our original plan was to include remote tests that actually hit our production API so how can we enable that in our tests?
 
