@@ -1,11 +1,12 @@
 ---
-title: Performing a Content Audit—A deep dive into Spreedly.com
+title: Performing a Content Audit — A deep dive into Spreedly.com
 author: Dane Wesolko
 author_email: dane@spreedly.com
 author_url: https://twitter.com/DanesBrains
 date: 2017-01-09
 tags: design
-image_src: /images/content-audit/leader.jpg
+next_label: If you're interested in content audits, chances are you take a thoughtful approach to design. Read more about our design philosophy here.
+next_path: /blog/purposeful-web-design-designing-the-spreedly-support-app.html
 ---
 
 ![Getting prepped for a content audit of Spreedly's marketing website.](/images/content-audit/spreedly_content_audit.jpg)

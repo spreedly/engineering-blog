@@ -1,11 +1,12 @@
 ---
-title: Purposeful Web Design—Designing the Spreedly Support App
+title: Purposeful Web Design — Designing the Spreedly Support App
 author: Dane Wesolko
 author_email: dane@spreedly.com
 author_url: https://twitter.com/DanesBrains
 date: 2016-10-06
 tags: design
-image_src: /images/support-app/leader.png
+next_label: Be purposeful not just with your design, but your content too!
+next_path: /blog/performing-a-content-audit--a-deep-dive-into-spreedly.html
 ---
 
 ![Spreedly support app open in a browswer window](/images/support-app/support_app.jpg)

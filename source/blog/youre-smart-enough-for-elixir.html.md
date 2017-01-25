@@ -5,6 +5,8 @@ author_email: stephen@spreedly.com
 author_url: https://twitter.com/stephenballnc
 date: 2016-07-11
 tags: elixir
+next_label: Now that you know you're smart enough for Elixir, wrap your head around GenStage here.
+next_path: /blog/how-do-i-genstage.html
 ---
 
 *A brief glimpse into Elixir from an object oriented perspective.*

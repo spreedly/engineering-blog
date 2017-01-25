@@ -5,7 +5,8 @@ author_email: nathaniel@spreedly.com
 author_url: https://twitter.com/ntalbott
 date: 2016-08-04
 tags: hiring
-image_src: /images/hazing/leader.jpg
+next_label: Want a good first step to implement a humane hiring process? Try starting with work samples.
+next_path: /blog/programming-puzzles-are-not-the-answer-how-spreedly-does-work-samples.html
 ---
 
 As an employer, it’s easy for an organization like Spreedly to complain about the difficulties of the hiring process. Huge investments of time with uncertain results, noisy pipelines of dubiously qualified candidates, lying recruiters, spamming spammers who can’t read, lack of good science around hiring processes and their effectiveness, etc. Isn’t an employer’s life tough?

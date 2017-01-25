@@ -5,7 +5,8 @@ author_email: david@spreedly.com
 author_url: https://twitter.com/ddsaso
 date: 2016-11-4
 tags: elixir, testing
-image_src: /images/mocks/leader.jpg
+next_label: If you enjoyed learning about mocking in Elixir, then you're definitely smart enough for Elixir.
+next_path: /blog/youre-smart-enough-for-elixir.html
 ---
 Writing tests for your code is easy. Writing good tests is much harder. Now throw in requests to external APIs that can return (or not return at all!) a myriad of different responses and we’ve just added a whole new layer of possible cases to our tests. When it comes to the web, it’s easy to overlook the complexity when working with an external API. It’s become so second nature that writing a line of code to initiate an HTTP request can become as casual as any other line of code within your application. However that’s not always the case.
 

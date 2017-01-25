@@ -5,7 +5,8 @@ author_email: adrian@spreedly.com
 author_url: https://twitter.com/bitcapulet
 date: 2016-10-19
 tags: elixir
-image_src: /images/how-do-i-genstage/leader.jpg
+next_label: We know you test your Elixir code, right? Read about how we use mocks in Elixir here.
+next_path: /blog/mocks-and-explicit-contracts-in-practice.html
 ---
 
 I’m new to Elixir. And Erlang. And OTP’s GenServer. And GenStage. While I’ve got beginner’s-eye, I’m going to share knowledge for a general audience. So this is a doorknob-simple look at GenStage. With clear examples and *I Love Lucy* references. Enjoy!
