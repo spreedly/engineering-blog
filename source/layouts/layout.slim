@@ -36,10 +36,10 @@ html
         = yield
         - unless current_article.nil?
           hr.article-header-separator
-          .next-article
-            | More like this:&nbsp;
-            a href=current_article.data.next_path
-              = current_article.data.next_label
-          = partial "partials/social"
+          - unless current_article.data.next_label.nil?
+            .next-article
+              | More like this:&nbsp;
+              a href=current_article.data.next_path
+                = current_article.data.next_label
     footer
       = partial "partials/footer"
