@@ -16,17 +16,17 @@ def format_title
   separator = ' | '
   if data.settings.reverse_title
     if current_article
-      current_article.title + separator + data.settings.site_title
+      current_article.title
     elsif @page_title
-      @page_title + separator + data.settings.site_title
+      @page_title
     else
       data.settings.site_title
     end
   else
     if current_article
-      data.settings.site_title + separator + current_article.title
+      current_article.title
     elsif @page_title
-      data.settings.site_title + separator + @page_title
+      @page_title
     else
       data.settings.site_title
     end
