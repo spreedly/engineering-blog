@@ -6,7 +6,7 @@ html
     meta[name="viewport" content="initial-scale=1.0, user-scalable=no"]
     title
       = format_title
-    meta[description="#{page_description}"]
+    meta[name="description" content="#{page_meta}"]
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     link[rel="stylesheet" type="text/css" href="/stylesheets/style.css"]
     link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"]

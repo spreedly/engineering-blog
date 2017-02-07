@@ -5,6 +5,7 @@ author_email: ryan@spreedly.com
 author_url: https://twitter.com/rwdaigle
 date: 2017-02-07
 tags: kafka, distributed-systems
+meta: Learn how Spreedly chose Apache Kafka to build its next-generation microservices based architecture, and what lessons we learned along the way
 ---
 
 At Spreedly we’re currently undergoing a rather significant change in how we design our systems and the tooling we use to facilitate that change. One of the main enablers for this effort has been [Apache Kafka](https://kafka.apache.org/), a distributed log particularly useful in building stream-based applications. For the past several months we’ve been weaving Kafka into our systems and wanted to take the opportunity to capture some of our thinking around this decision, how we decided to approach the project, and what we learned (and are still in the process of learning).

@@ -45,6 +45,14 @@ def page_description
   description.gsub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').gsub(/[\r\n]/, ' ')
 end
 
+def page_meta
+  if current_article && current_article.data.meta
+    meta = current_article.data.meta
+  else
+    page_description[0...160]
+  end
+end
+
 def strip_images(html)
   doc = Nokogiri::HTML(html)
   doc.search('img').each { |i| i.parent.remove }
