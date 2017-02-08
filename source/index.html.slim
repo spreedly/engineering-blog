@@ -4,7 +4,7 @@ per_page: 10
 ---
 - page_articles.each_with_index do |article, i|
   hr.article-header-separator
-  h1.article-title
+  h2.article-title
     = link_to article.title, article
   // - if article.data.image_src
   //   a href=article.url
