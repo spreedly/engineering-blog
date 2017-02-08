@@ -45,7 +45,7 @@ One of the most important qualities of a work sample is that the task the candid
 
 For instance, Spreedly provides API integrations to over a hundred payment gateways, contributing to and maintaining the ActiveMerchant library in the process. Our [main work sample](https://gist.github.com/rwdaigle/e680696cf8078cbde5cc) is to actually create an ActiveMerchant adapter to a mock payment gateway. This is a real thing our development group does on a regular basis, and not only does it let us evaluate a candidate against a very well known deliverable, it also gives the candidate a sense of what happens inside the company.
 
-[![](http://share.ryandaigle.com/tperf-20160707152827.png)](https://gist.github.com/rwdaigle/e680696cf8078cbde5cc)
+[![Spreedly Active Merchant work sample instructions](http://share.ryandaigle.com/tperf-20160707152827.png)](https://gist.github.com/rwdaigle/e680696cf8078cbde5cc)
 
 Some companies have work samples that are prototypes of a project that might actually ship someday. While this certainly satisfies the relevance criteria, we think it sends the wrong signal of asking a candidate to work for free. Our work sample is clearly something that will never make it to production (it’s a fake gateway, after all) and it shows that we’ve invested quite a bit of effort ourselves setting up this hypothetical integration.
 
@@ -60,7 +60,7 @@ The criteria by which you grade each work sample should be determined alongside 
 
 Within each axis you want to aim for at least three specific grading criteria. Any less than ten total criteria (across all axes) and there’s not enough separation between candidates to properly rank multiples candidates within the same hiring round. These criteria should be structured as close to a yes/no determination as possible - this ensures consistency across graders. Here’s an example of some grading criteria from one of our work sample submissions:
 
-![](http://share.ryandaigle.com/dpr8d-20160610104535.png)
+![Work sample grading criteria](http://share.ryandaigle.com/dpr8d-20160610104535.png)
 
 Determining what a passing grade is from your initial set of 10+ criteria is something that should be refined over time. However, a great way to establish a baseline is to give the work sample to a few of your existing employees! Take the average of their grades, reduce it by *at least* 25%, and make that the starting threshold for new employees (there’s a lot of subjectivity here, so be flexible in the beginning and take a critical look at how realistic your criteria are for somebody with no domain knowledge).
 
@@ -76,7 +76,7 @@ Whether acknowledged or not, we all bring our own biases to the interview proces
 
 At Spreedly, the person that is managing the hiring process (and is communicating directly with the candidate) adds the anonymized work sample to a hiring GitHub repo and creates an issue with the grading criteria checklist. Only once the grading has been completed, and its results confirmed from other team members, is the candidate’s application evaluated.
 
-![](http://share.ryandaigle.com/4yug9-20160707153215.png)
+![Blind grading process issue tracking](http://share.ryandaigle.com/4yug9-20160707153215.png)
 
 We recently had a hiccup where I incorrectly created grading issues for three different candidates *using the same work sample*. After realizing the mistake I looked to see how the three graders processed their work samples and they had all come to the same numerical grade (out of 33 criteria)! This was great validation that blind grading with well defined criteria can result in unbiased and consistent evaluations.
 
@@ -99,7 +99,7 @@ There are a lot of details when it comes to work samples that can make life easi
 - Always have a version identifier for each work sample and associated grading criteria. Your work samples should undergo several rounds of revision, but you want to make sure that there’s consistency within each round of hiring. Having a version identifier on each sample lets you know when you’re crossing grading boundaries.
 - Along with the work sample version, the grading criteria/checklist should have a table showing pass/fail/review levels. As a grader you don’t want to have to refer back and forth to several places when grading. Put everything the grader needs right in the grading issue itself. Here’s what the bottom of our grading checklist looks like:
 
-![](http://share.ryandaigle.com/t11fm-20160610110815.png)
+![Grading scale on every work sample](http://share.ryandaigle.com/t11fm-20160610110815.png)
 
 
 ## Wrap-up
