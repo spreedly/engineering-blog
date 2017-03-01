@@ -35,11 +35,15 @@ html[lang="en"]
           hr.article-header-separator
         = yield
         - unless current_article.nil?
-          hr.article-header-separator
-          - unless current_article.data.next_label.nil?
-            .next-article
-              | More like this:&nbsp;
-              a href=current_article.data.next_path
-                = current_article.data.next_label
+          / hr.article-header-separator
+          / - unless current_article.data.next_label.nil?
+          /   .next-article
+          /     | Next:&nbsp;
+          /     a href=current_article.data.next_path
+          /      = current_article.data.next_label
+          .share
+            .fa.fa-twitter.item
+              a href="https://twitter.com/intent/tweet?text=#{URI.escape("#{current_article.title} from @SpreedlyEng #{URI.join(data.settings.site_url, current_page.path)}")}"
+                | Share on Twitter
     footer
       = partial "partials/footer"
