@@ -8,7 +8,7 @@ tags: riak, erlang, kafka, distributed-systems
 meta: How Spreedly integrated Apache Kafka into our data infrastructure. This post focuses on how we engineered data to be automatically sent from our Riak Database.
 ---
 
-In [Apache Kafka at Spreedly: Part I – Building a Common Data Substrate](/blog/apache-kafka-spreedly-part1-building-common-data-substrate.html) Ryan introduced the place Kafka will take in our infrastructure. In this series I'll be describing the implementation details of how we're reliably and efficiently taking data from Riak to Kafka.
+In [Apache Kafka at Spreedly: Part I – Building a Common Data Substrate](/blog/apache-kafka-spreedly-part1-building-common-data-substrate.html) Ryan introduced the place Kafka will take in our infrastructure. In this series I'll describe the implementation details of how we're reliably and efficiently producing data from Riak to Kafka.
 
 READMORE
 
