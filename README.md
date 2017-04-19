@@ -21,8 +21,10 @@ _This is part of the larger [Engineering Blog program](https://paper.dropbox.com
 To create a new post, create a new file in the `source/blog` directory. Name it using dasherized form of the title. This will become the URL path so it should be contain the major keywords for the article.
 
 ```bash
-$ touch source/blog/my-blog-title.md
+$ touch source/blog/my-blog-title.html.md
 ```
+
+You'll need the `.html.md` at the end of that command. Without it, the post won't show up.
 
 In the post, add this front matter to the top of the file, and add your content below it:
 
