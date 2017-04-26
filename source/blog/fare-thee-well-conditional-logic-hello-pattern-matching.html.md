@@ -23,7 +23,7 @@ Let's consider a simple example where we'd like to discern the type of a triangl
 
 
 ```elixir
-test "equilateral triangles have equal sides" do
+test "different kinds of triangles" do
   assert Triangle.kind(2, 2, 2) == :equilateral
   assert Triangle.kind(3, 4, 4) == :isosceles
   assert Triangle.kind(4, 3, 4) == :isosceles
