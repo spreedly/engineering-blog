@@ -4,7 +4,7 @@ author: Duff O'Melia
 author_email: duff@spreedly.com
 author_url: https://twitter.com/duffomelia
 date: 2017-04-19
-tags: pattern-matching, elixir
+tags: elixir
 meta: See how pattern matching in Elixir allows us to elegantly express conditional logic.
 ---
 

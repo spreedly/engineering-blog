@@ -4,7 +4,7 @@ author: Stephen Ball
 author_email: stephen@spreedly.com
 author_url: https://twitter.com/stephenballnc
 date: 2017-03-15
-tags: riak, erlang, kafka, distributed-systems
+tags: riak, kafka, distributed-systems
 meta: How Spreedly integrated Apache Kafka into our data infrastructure. This post focuses on how we engineered data to be automatically sent from our Riak Database to Apache Kafka.
 ---
 
