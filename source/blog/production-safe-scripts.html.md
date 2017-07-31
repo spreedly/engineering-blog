@@ -22,7 +22,7 @@ READMORE
 
 ## Status
 
-One of the most overlooked, but important, aspects to a script’s operation is visibility into its execution. How do you know if your script is proceeding as expected? How do you know how far it’s completed? How will you know if your script has been successful? Always knowing the status of your script provides this level of visibility and really encompasses three things: runtime metrics, logging, and exist status.
+One of the most overlooked, but important, aspects to a script’s operation is visibility into its execution. How do you know if your script is proceeding as expected? How do you know how far it’s completed? How will you know if your script has been successful? Always knowing the status of your script provides this level of visibility and really encompasses three things: runtime metrics, logging, and exit status.
 
 ### Metrics
 
