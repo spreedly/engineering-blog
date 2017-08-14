@@ -1,5 +1,5 @@
 ---
-title: Machine Learning in Practice: Different than a Kaggle Competition
+title: "Machine Learning in Practice: Different than a Kaggle Competition"
 author: Michael Bostwick
 author_email: michael.bostwick@spreedly.com
 author_url: https://www.linkedin.com/in/michaelbostwick1/
