@@ -1,8 +1,4 @@
 header {
-  // background-image: url("../images/header-bg.png");
-  // background-position: -300px 40px;
-  // background-repeat: no-repeat;
-  // height: 15em;
   margin: 0 auto;
 
   @include breakpoint($large-screen) {
@@ -10,13 +6,10 @@ header {
     background-size: contain;
   }
 
-  // @include breakpoint($large-screen) {
-  //   height: 400px;
-  // }
-
   .top-menu {
     @include pie-clearfix;
-    background-color: $main-dark;
+    border-bottom: 1px solid $main-dark;
+    background-color: $white;
     height: $top-menu-height;
     position: fixed;
     top: 0;
@@ -34,10 +27,11 @@ header {
       }
 
       a {
-        color: $top-menu-text-color;
+        color: $main-dark;
+        line-height: $top-menu-height / 1.5;
 
         &:hover {
-          color: darken($top-menu-text-color, 6);
+          color: darken($main-dark, 6);
         }
       }
 
@@ -93,10 +87,6 @@ header {
 
   .title {
     padding: 6em 0 0 0;
-
-    // @include breakpoint($large-screen) {
-    //   padding: 250px 20px 0;
-    // }
 
     $site-title-logo-image: false;
 

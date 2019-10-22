@@ -1,42 +1,15 @@
 source 'https://rubygems.org'
-ruby "2.2.3"
+ruby "2.6.5"
 
-# middleman
-gem 'middleman', '~> 4.1'
-
-# middleman-blog
-gem 'middleman-blog', '~> 4.0'
-
-# For syntax highlighting
-gem 'middleman-syntax'
-
-# Live-reloading plugin
-gem 'middleman-livereload'
-
-gem 'middleman-compass'
-gem "breakpoint", "~>2.7"
-
-# For feed.xml.builder
+gem 'breakpoint'
 gem 'builder'
-
-# For using Slim template
-gem 'slim'
-
-# For GitHub Pages deployment
-# gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
-
-# For S3 deployment
-# gem 'middleman-s3_sync'
-
-# For Markdown
-# gem 'kramdown'
-gem 'redcarpet'
-
-# Web server
+gem 'middleman', '4.1.7'
+gem 'middleman-blog'
+gem 'middleman-compass'
+gem 'middleman-livereload'
+gem 'middleman-syntax'
+gem 'nokogiri'
 gem 'puma'
-
-# to serve static files
 gem 'rack-contrib'
-
-# Heroku New Relic Addon
-# gem 'newrelic_rpm'
+gem 'redcarpet'
+gem 'slim'

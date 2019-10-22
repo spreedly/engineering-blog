@@ -23,16 +23,10 @@ main {
     }
 
     .tag-labels {
-      // margin-left: .7rem; // centering
-      // margin-top: -2em;
-      // text-align: right;
       width: 50%;
     }
 
     .tag-label {
-      // @include border-radius(13px);
-      // background: $main-dark;
-      // border: 1 solid $main-dark;
       color: $link-color;
       cursor: pointer;
       display: inline-block;
@@ -47,11 +41,6 @@ main {
       &:hover {
         color: darken($link-color, 6);
       }
-
-      // a {
-      //   color: $white;
-      //   width: 100%;
-      // }
     }
 
     .metadata-wrapper {
