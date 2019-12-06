@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.3"
+ruby "2.5.7"
 
 # middleman
 gem 'middleman', '~> 4.1'
@@ -13,6 +13,7 @@ gem 'middleman-syntax'
 # Live-reloading plugin
 gem 'middleman-livereload'
 
+gem 'compass'
 gem 'middleman-compass'
 gem "breakpoint", "~>2.7"
 
@@ -33,7 +34,9 @@ gem 'slim'
 gem 'redcarpet'
 
 # Web server
-gem 'puma'
+gem "puma", ">= 3.12.2"
+
+gem "nokogiri"
 
 # to serve static files
 gem 'rack-contrib'
