@@ -38,7 +38,7 @@ Given a particular problem or choice to made, the first step is to list out pote
 
 Great. Now we have a concrete list of potential solutions. But, there is no such thing as a perfect solution. Every option has some set of pros and cons. If you can’t list at least one for each category, you probably don’t understand the proposed solution and need to dig a little deeper. If you’re having issues coming up with one or the other, here’s a hint: An option’s greatest strength is often the source of their greatest weakness. E.g., solution X is highly distributed! 💥. Well, that probably means it’s also more complex than other solutions or incurs a higher operational burden.
 
-![](https://legaltemplates.net/wp-content/uploads/2016/01/entrepreneur-tradeoffs-1024x661.jpg)
+![](/images/entrepreneur-tradeoffs-1024x661.jpg)
 
 At this point you have a rough matrix of solutions and their pros/cons. Be sure to evaluate the pros and cons consistently across all options, e.g., “complexity” across all options, “cost” across all options etc…
 
@@ -52,7 +52,7 @@ Given these priorities, note which tradeoffs that are most relevant and supporti
 
 Remember when we talked about our inverted org structure? Here’s where the rubber meets the road, where the person who’s in charge of actually implementing the solution or who “owns” the results of the decision gets to make the final call. In our case, that’s almost always the engineer responsible for the feature/system.
 
-![](https://cdn2.techworld.com/cmsdata/features/3611854/Developer_thumb800.jpg)
+![](/images/Developer_thumb800.jpg)
 
 That might seem like a lot of pressure, but let’s look at where we are. At this point you should have an objective set of potential solutions, an objective list of tradeoffs for each solution, and an objective set of company or team priorities that are applicable to the problem domain. You have achieved clarity in solutions and the properties of those solutions. Making a decision from such a stable foundation when all subjectivity has been squeezed out is often a simple proposition.
 
