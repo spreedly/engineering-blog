@@ -23,7 +23,7 @@ One suggested next step after building a baseline machine learning model is to p
 
 In the context of images or text this can be particularly useful as these are easy tasks for humans, but difficult for computers. On the other hand, classification in a business context is not necessarily easy for humans or computers. Particularly, as a data scientist new to the business, all you may know about the examples are captured in the features already included in the model.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_FEF5CD68E59027483F6E6E419C74006857D7AFF3AEA9864AAF29391033702F0B_1501093375209_image.png)
+![](/images/s_FEF5CD68E59027483F6E6E419C74006857D7AFF3AEA9864AAF29391033702F0B_1501093375209_image.png)
 
 Often then, this requires a business perspective. For example, a customer success manager may have a mental picture that comes to mind just from a company name, developed from many customer interactions. Showing them a handful of misclassifications may yield new feature directions to explore.
 
@@ -46,7 +46,7 @@ It may seem from the start that certain algorithms are bad fits for your problem
 
 Part of the data that I used to build the lead scoring model was event based. For each trial account we had a list of the events they performed and what day and time they occurred at. Such rich data has great potential in machine learning, but only if it can be properly represented in features for an algorithm. Most algorithms expect training examples to be like rows in a table, so varying length streams of events need to be aggregated in some form. There are countless options for doing this; we could simply count the number of times each event type occurs, we could measure the time until each event first occurs, we could count specific patterns like “Add Test Payment Method Succeeded” followed by “Retain Payment Method Succeeded”, or we could do many other things.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_FEF5CD68E59027483F6E6E419C74006857D7AFF3AEA9864AAF29391033702F0B_1501091315366_image.png)
+![](/images/s_FEF5CD68E59027483F6E6E419C74006857D7AFF3AEA9864AAF29391033702F0B_1501091315366_image.png)
 
 Like in the error analysis step, talking to the business can help shortcut this process. After getting some valuable input from the CEO of Spreedly we decided the number of unique days each event type occurred on would be a good measure. A trial user viewing the pricing page on 5 separate days should be different than viewing the pricing page 5 times in the same day. Of course, part of the benefit of machine learning is discovering patterns previously unconsidered so techniques like unsupervised learning or Recurrent Neural Networks (like [suggested in this paper](http://mlrec.org/2017/papers/paper2.pdf)) are worth pursuing if you have sufficient data.
 
