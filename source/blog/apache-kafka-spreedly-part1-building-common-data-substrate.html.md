@@ -18,7 +18,7 @@ READMORE
 
 Spreedly’s main transaction processing system has been around for several years now. “Legacy” in age only, the core system is well-maintained, has excellent test coverage, supports multiple deploys per day, and has reliably processed billions of financial transactions over the course of its life.
 
-![Billions and billions of transactions served](http://cdn.shopify.com/s/files/1/0070/7032/files/mcdonalds.png?7345)
+![Billions and billions of transactions served](/images/mcdonalds.png)
 
 So why change what’s working? As any successful technical organization knows, a system may be operating just as it was designed years ago, but the world around it has changed so much so as to render the assumptions and constraints of that original system obsolete. As we looked towards supporting Spreedly’s growth for the next ten years, and the needs of our customers over that period of time, we realized the current architecture wasn’t going to last forever. We needed to invest in our systems to support a greater level of scale, both operationally and organizationally.
 
