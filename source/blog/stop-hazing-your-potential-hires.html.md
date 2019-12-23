@@ -35,7 +35,7 @@ One way we currently apply incremental investment is by having hiring managers d
 
 **The third guideline is that investment in the hiring process should be *relevant* to the position actually being sought.** Every time Spreedly interacts with a candidate, we want to be asking ourselves: "Does the outcome of this interaction have bearing on the job the candidate will actually be doing?" Any time the answer is "No," we're both distracting from the issue at hand and creating a handhold for our unintentional biases to latch onto.
 
-One key way we try to drive relevance in the interviewing process is by using [work samples rather than programming puzzles](http://engineering.spreedly.com/blog/programming-puzzles-are-not-the-answer-how-spreedly-does-work-samples.html) to assess the skill match of candidates to the position they're applying for. Work samples are relevant to the work we do, and not only let Spreedly assess a candidate's fit, but let candidates assess whether the problems that Spreedly is focused on seem interesting to them.
+One key way we try to drive relevance in the interviewing process is by using [work samples rather than programming puzzles](/blog/programming-puzzles-are-not-the-answer-how-spreedly-does-work-samples.html) to assess the skill match of candidates to the position they're applying for. Work samples are relevant to the work we do, and not only let Spreedly assess a candidate's fit, but let candidates assess whether the problems that Spreedly is focused on seem interesting to them.
 <br/>
 <br/>
 <br/>

@@ -117,4 +117,4 @@ When a language like Elixir offers intuitive ways to structure the code such tha
 
 Pattern matching has been such a pleasure to use. It's difficult for me to imagine building a large system without it.
 
-If you’re considering using Elixir in your next project, [Stephen Ball’s blog post](https://engineering.spreedly.com/blog/youre-smart-enough-for-elixir.html) is a reminder that things may be simpler than you might imagine.
+If you’re considering using Elixir in your next project, [Stephen Ball’s blog post](/blog/youre-smart-enough-for-elixir.html) is a reminder that things may be simpler than you might imagine.
