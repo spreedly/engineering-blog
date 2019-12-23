@@ -37,7 +37,7 @@ To those well-versed in popular technology trends, you might recognize many of t
 
 Having a common substrate for all apps was important to us since, while increasing the number of applications being built affords a certain focus and velocity, it also introduces additional complexity and operational overhead. Instead of blindly creating an unbounded network of microservices, we envisioned a constellation of apps, all pulling from the same source of truth.
 
-![Microservices graph vs. constellation graph](http://share.ryandaigle.com/microservices-vs-constellation.png)
+![Microservices graph vs. constellation graph](/images/microservices-vs-constellation.png)
 
 Our goal with this type of architecture is the ability to deliver smaller and more focused services while not exponentially increasing the number of system dependencies.
 
@@ -55,7 +55,7 @@ Kafka is an ordered and indexed (by offset) log of data. Unlike a queue which do
 
 Consider the case when you configure your Kafka topic to retain messages for some X period of time. Any new application that comes online can start processing from the oldest retained message, meaning they have a pre-determined way to read in X amount of history and bringing their state up to par with other components in the system. Also, more generally, this is a really convenient way to bootstrap new systems. With a traditional queue once a message has been delivered to its currently configured listeners, that message disappears.
 
-![Several consumers accessing a shared Apache Kafka topic, all at different offset](http://share.ryandaigle.com/kafka-topic.png)
+![Several consumers accessing a shared Apache Kafka topic, all at different offset](/images/kafka-topic.png)
 
 Additionally, Kafka itself can manage the last delivered offset per consuming system. This relieves consuming applications from the burden of having to know from which point to start consuming (new apps start at the beginning, existing apps start at their last index) and provides a very clean error recovery mechanism.
 
@@ -65,7 +65,7 @@ By exposing the mechanics of an ordered and indexed log, Kafka provides a level 
 
 Kafka not only exposes a flexible retention property, it also introduces the concept of log compaction. All messages in Kafka have a key. Compaction specifies that only the most recent value for a key is kept. So what exactly does this provide us?
 
-![An Apache Kafka compacted topic automatically prunes duplicate entries](http://share.ryandaigle.com/kafka-topic-compacted.png)
+![An Apache Kafka compacted topic automatically prunes duplicate entries](/images/kafka-topic-compacted.png)
 
 This is where the more database-like properties of Kafka come into play. By efficiently storing a large amount of key-based data, and being able to efficiently advance through it, we now have something akin to a distributed index. Multiple consuming systems can process through a single optimized view of all their relevant data. This is an important use case for Spreedly since our primary datastore is a Riak distributed database which doesn’t provide efficient record-iteration functionality. Even if you’re not using a distributed store yourself, having the native ability to automatically compact some dataset is a useful primitive to have available.
 
@@ -73,7 +73,7 @@ This is where the more database-like properties of Kafka come into play. By effi
 
 This is a less a direct comparison to something Kafka provides vs. traditional message queues, but is worth calling out. Kafka provides an incredible level of operational flexibility. Multiple topics can be configured on the same Kafka instance, each with their own distinct retention, compaction, security, partitioning, access, and replication settings. You can really pack a lot of very specific topic usage onto the same Kafka instance. This is a great quality, since once you have a Kafka instance provisioned, you can slice and dice to the needs of each class of application.
 
-![Independently administer and configure different topics of the same Apache Kafka instance](http://share.ryandaigle.com/kafka-topic-isolation.png)
+![Independently administer and configure different topics of the same Apache Kafka instance](/images/kafka-topic-isolation.png)
 
 ## The wrap-up
 

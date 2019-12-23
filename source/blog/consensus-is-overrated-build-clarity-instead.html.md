@@ -20,7 +20,7 @@ First, some background.
 
 While Spreedly may have a somewhat traditional Engineering org chart (CTO/VP of Engineering → Engineering Managers → small teams of engineers), operationally we do almost the complete opposite. If we look at decision making authority, the org chart is flipped on its head.
 
-![](http://share.ryandaigle.com/consensus-org-chart.png)
+![](/images/consensus-org-chart.png)
 
 We expect our Engineers to be making and justifying their decisions to their peers and managers, who are there to support them in making well-reasoned decisions vs. making decisions for them. The CTO/VP of Engineering is then there to support the Engineering Managers in their support of Engineers etc…
 

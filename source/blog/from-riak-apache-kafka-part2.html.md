@@ -16,7 +16,7 @@ READMORE
 
 Here’s the data flow diagram that we stopped with at the end of Part 1.
 
-![](http://share.ryandaigle.com/Photo-2018-02-23-14-08-ZkJ4U2D9jhX.jpg "Data flow from Riak to Kafka")
+![](/images/Photo-2018-02-23-14-08-ZkJ4U2D9jhX.jpg "Data flow from Riak to Kafka")
 
 We had a postcommit hook ready to go that would send data using the Erlang GenServer API to an Elixir process called the “commitlog”. The commitlog would be responsible for accepting the data and reliably delivering it to Kafka or logging its failure to do so (yes, you can send binary-compatible data from an erlang process to an Elixir process!).
 
@@ -28,7 +28,7 @@ The key to the commitlog’s reliability is the Erlang/Elixir OTP framework. OTP
 
 There are several conceptual layers of supervision in the commitlog - it’s probably best to visualize them. Here’s how the pieces fit together:
 
-![](http://share.ryandaigle.com/awb9e-20180226105116.png "Commitlog supervisor hierarchy")
+![](/images/awb9e-20180226105116.png "Commitlog supervisor hierarchy")
 
 Let’s take a look at each of these major pieces of the commitlog.
 
@@ -56,19 +56,19 @@ Along with actually delivering data to Kafka, the Commitlog is also responsible 
 
 Latency we track by having postcommit hook report the time it took to send data to the Commitlog and receive a confirmation.
 
-![](http://share.ryandaigle.com/Photo-2018-02-23-14-27-Hqg4DuW3QXt.jpg "Time to produce to the commitlog from the Riak post-commit hook")
+![](/images/Photo-2018-02-23-14-27-Hqg4DuW3QXt.jpg "Time to produce to the commitlog from the Riak post-commit hook")
 
 Separately we have the Commitlog report the time it took to actually deliver the data to Kafka.
 
-![](http://share.ryandaigle.com/Photo-2018-02-23-14-29-6L4qhTLTcGN.jpg "Time to send data to Kafka")
+![](/images/Photo-2018-02-23-14-29-6L4qhTLTcGN.jpg "Time to send data to Kafka")
 
 Traffic is a simple count of messages sent to the Receiver and errors are tracked by both the postcommit hook and the Commitlog. They each increment their error count if they are unable to pass the data along.
 
-![](http://share.ryandaigle.com/Photo-2018-02-23-14-36-s8PLUu7RRtb.jpg "Whew. Zero errors.")
+![](/images/Photo-2018-02-23-14-36-s8PLUu7RRtb.jpg "Whew. Zero errors.")
 
 Saturation is where the count of active messages comes in. If there’s a network problem and Kafka is temporarily unavailable then we see a surge in the number of active messages as they buffer up while attempting to deliver to Kafka.
 
-![](http://share.ryandaigle.com/Photo-2018-02-23-14-38-cfM8FObYsCZ.jpg "Saturation as measured by number of messages currently buffered in commitlog")
+![](/images/Photo-2018-02-23-14-38-cfM8FObYsCZ.jpg "Saturation as measured by number of messages currently buffered in commitlog")
 
 ## The Future
 With the postcommit hook and Commitlog in place we have our primary data store, Riak, sending all new data into a Kafka topic.
