@@ -11,7 +11,7 @@ next_path: /blog/stop-hazing-your-potential-hires.html
 
 *A guide to creating fair and effective hiring work samples.*
 
-It’s a common topic of discussion amongst technical organizations that the traditional, in-person, conversation-based, interview process for developers is [flawed](http://www.wired.com/2015/04/hire-like-google/). The conventional process does not measure a candidate’s ability to perform the job in question, does not result in more successful hires, and allows for implicit bias. As a result, many companies use an interview process based on programming puzzles: one-time exercises that test a candidate’s ability to solve a specific, well-known problem.
+It’s a common topic of discussion amongst technical organizations that the traditional, in-person, conversation-based, interview process for developers is [flawed](https://www.wired.com/2015/04/hire-like-google/). The conventional process does not measure a candidate’s ability to perform the job in question, does not result in more successful hires, and allows for implicit bias. As a result, many companies use an interview process based on programming puzzles: one-time exercises that test a candidate’s ability to solve a specific, well-known problem.
 
 While this may be a step in the right direction, it’s still a hugely biased and ineffective approach to hiring. In this post I explain how we do hiring at Spreedly and, specifically, how we measure a candidate’s competence using job and company specific work samples.
 

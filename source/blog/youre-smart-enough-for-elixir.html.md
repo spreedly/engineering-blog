@@ -31,7 +31,7 @@ After a few weeks of using Elixir (and some Erlang) nearly full-time at work, Iâ
 
 Concurrency is one of those development approaches that you usually only reach for when you really need to work some magic. The need to scale out is demanding enough that youâ€™re willing to pay the complexity price and take on the risk of getting something wrong. In object oriented programming the danger of ending up with bad (i.e. unexpected) data is very real once you start running things concurrently.
 
-In Ruby you have to start pulling in more complicated objects like [Queue](http://ruby-doc.org/core-2.3.1/Queue.html) and start thinking very hard about all the places in your code that might be trying to update the same data at the same time. If more than one piece of code changes the same data at the same time then you end up with terrible things like race conditions or deadlocks which are no fun at all to debug.
+In Ruby you have to start pulling in more complicated objects like [Queue](https://ruby-doc.org/core-2.6.5/Queue.html) and start thinking very hard about all the places in your code that might be trying to update the same data at the same time. If more than one piece of code changes the same data at the same time then you end up with terrible things like race conditions or deadlocks which are no fun at all to debug.
 
 There are some very ambitious projects in Ruby trying to improve the situation but they are hampered by the language itself.
 

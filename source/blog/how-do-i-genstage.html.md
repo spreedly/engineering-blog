@@ -37,7 +37,7 @@ For instance, your problem is shipping chocolates. Part 1 is making the treats, 
 <img alt="Lucy begins wrapping chocolates" src="/images/how-do-i-genstage/lucy1.gif" style="display: inline; height: 185px; width: auto">
 <img alt="Lucy is overwhelmed by the speed of chocolates production" src="/images/how-do-i-genstage/lucy2.gif" style="display: inline; height: 185px; width: auto">
 <img alt="Lucy desperately stuffs chocolates in her mouth and hat" src="/images/how-do-i-genstage/lucy3.gif" style="display: inline; height: 185px; width: auto">
-(Shown here is [Lucille Ball](https://en.wikipedia.org/wiki/Lucille_Ball), legendary entertainer, entrepreneur, and [person-who-saved-Star-Trek](http://www.ew.com/article/2016/07/08/lucille-ball-star-trek).)
+(Shown here is [Lucille Ball](https://en.wikipedia.org/wiki/Lucille_Ball), legendary entertainer, entrepreneur, and [person-who-saved-Star-Trek](https://ew.com/article/2016/07/08/lucille-ball-star-trek/).)
 
 ### Lucy's Chocolate Twitter-Feed
 
@@ -345,6 +345,6 @@ If you want to learn more about this you can read:
 
 - Fabulous new blog post [Reactive Tweets with Elixir GenStage](https://almightycouch.org/blog/reactive-tweets-elixir-genstage/) by Mario Flach
 - Even crunchier example [Using GenStage to Notify a Phoenix Channel of Updates in Elixir](http://learningelixir.joekain.com/using-gen-stage-to-notify-a-channel/) by Joseph Kain
-- or the original[ GenStage Announcement](http://elixir-lang.org/blog/2016/07/14/announcing-genstage/)
+- or the original[ GenStage Announcement](https://elixir-lang.org/blog/2016/07/14/announcing-genstage/)
 
 Thanks so much to José Valim and his cadre of brilliant and charming collaborators for Elixir and GenStage. Thanks also to the folks who’ve posted previous examples, to Lucille Ball (that human was genius), and to Spreedly for being such a great place to work.
