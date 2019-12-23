@@ -23,6 +23,8 @@ gem 'builder'
 # For using Slim template
 gem 'slim'
 
+gem 'rake'
+
 # For GitHub Pages deployment
 # gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
