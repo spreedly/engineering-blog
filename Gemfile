@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby "2.5.7"
+ruby "2.6.6"
 
 # middleman
-gem 'middleman', '~> 4.1'
+gem 'middleman', '~> 4.4'
 
 # middleman-blog
 gem 'middleman-blog', '~> 4.0'
@@ -42,6 +42,3 @@ gem "nokogiri"
 
 # to serve static files
 gem 'rack-contrib'
-
-# Heroku New Relic Addon
-# gem 'newrelic_rpm'
